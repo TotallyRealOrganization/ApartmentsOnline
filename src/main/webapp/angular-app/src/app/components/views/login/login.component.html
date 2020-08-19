@@ -1,0 +1,28 @@
+<h1>Login</h1>
+<div>
+    <mat-form-field appearance="fill">
+      <mat-label>Username</mat-label>
+      <input matInput (keyup)="getInput($event)">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill" class="password">
+        <mat-label>Password</mat-label>
+    <input matInput type="password">
+    </mat-form-field> <br>
+    <button mat-stroked-button color="primary" class="createAccount">Create Account</button>
+    <button mat-stroked-button color="primary">Log in</button>
+    <span>{{ username }}</span>
+</div>
+    <!-- <mat-form-field appearance="fill">
+      <mat-label>Select</mat-label>
+      <mat-select>
+        <mat-option value="option">Option</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+      <mat-label>Textarea</mat-label>
+      <textarea matInput></textarea>
+    </mat-form-field>
+  </div> -->
+  

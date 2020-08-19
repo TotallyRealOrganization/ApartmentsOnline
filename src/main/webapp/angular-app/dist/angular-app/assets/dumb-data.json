@@ -1,0 +1,34 @@
+{
+    "apartments": [
+        {
+            "name": "some name",
+            "address": "123 main st",
+            "photo": "https://techcrunch.com/wp-content/uploads/2019/03/blueground-apartment-2-2-2.jpg?w=1390&crop=1",
+            "price": "$139.99"
+        },
+        {
+            "name": "some name",
+            "address": "123 main st",
+            "photo": "https://techcrunch.com/wp-content/uploads/2019/03/blueground-apartment-2-2-2.jpg?w=1390&crop=1",
+            "price": "$139.99"
+        },
+        {
+            "name": "some name",
+            "address": "123 main st",
+            "photo": "https://techcrunch.com/wp-content/uploads/2019/03/blueground-apartment-2-2-2.jpg?w=1390&crop=1",
+            "price": "$139.99"
+        },
+        {
+            "name": "some name",
+            "address": "123 main st",
+            "photo": "https://techcrunch.com/wp-content/uploads/2019/03/blueground-apartment-2-2-2.jpg?w=1390&crop=1",
+            "price": "$139.99"
+        },
+        {
+            "name": "some name",
+            "address": "123 main st",
+            "photo": "https://techcrunch.com/wp-content/uploads/2019/03/blueground-apartment-2-2-2.jpg?w=1390&crop=1",
+            "price": "$139.99"
+        }
+    ]
+}

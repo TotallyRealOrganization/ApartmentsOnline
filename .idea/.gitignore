@@ -7,4 +7,5 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 
-/src/main/webapp/angular-app/node_modules
+node_modules/
+

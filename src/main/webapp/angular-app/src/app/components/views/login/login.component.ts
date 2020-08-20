@@ -7,15 +7,18 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
   @Input()username:string = "";
-  password:string;
+  @Input() password:string = "";
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  getInput(evt: any): void {
-    this.username += evt.target.value
+  getUsername(evt: any): void {
+    this.username = evt.target.value
   }
 
+  getPassword(evt: any): void {
+    this.password = evt.target.value
+  }
 }

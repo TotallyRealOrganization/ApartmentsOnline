@@ -1,17 +1,18 @@
-<h1>Login</h1>
-<div>
+<div class="container">
+  <h1>Login</h1>
     <mat-form-field appearance="fill">
       <mat-label>Username</mat-label>
-      <input matInput (keyup)="getInput($event)">
+      <input matInput (keyup)="getUsername($event)">
     </mat-form-field>
     <br>
     <mat-form-field appearance="fill" class="password">
         <mat-label>Password</mat-label>
-    <input matInput type="password">
+    <input matInput type="password" (keyup)="getPassword($event)">
     </mat-form-field> <br>
-    <button mat-stroked-button color="primary" class="createAccount">Create Account</button>
-    <button mat-stroked-button color="primary">Log in</button>
+    <a [routerLink]="[password]"><button mat-stroked-button color="primary">Log in</button></a>
+    <button mat-stroked-button color="primary">Create Account</button>
     <span>{{ username }}</span>
+    <span>{{ password }}</span>
 </div>
     <!-- <mat-form-field appearance="fill">
       <mat-label>Select</mat-label>

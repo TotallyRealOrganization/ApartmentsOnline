@@ -16,8 +16,6 @@ script:
 - language: java
 dist: trusty
 jdk: oraclejdk8
-before_script:
-- cd src/main
 script:
  - mvn test
 notifications:

@@ -17,7 +17,7 @@ script:
 dist: trusty
 jdk: oraclejdk8
 before_script:
-- cd /
+- cd src/main
 script:
  - mvn test
 notifications:

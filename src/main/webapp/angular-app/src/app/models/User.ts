@@ -1,7 +1,7 @@
 import { Apartment } from "./Apartment";
 
 export class User {
-    username: String
+    email: String
     fullName: String
     password: String
     id: String

@@ -1,4 +1,5 @@
 export class Amenities {
+    id: string;
     washerDryer: boolean
     airConditioning: boolean
     furniture: boolean

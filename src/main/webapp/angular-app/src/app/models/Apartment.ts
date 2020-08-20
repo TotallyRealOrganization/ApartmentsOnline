@@ -2,6 +2,7 @@ import { User } from "./User";
 import { Amenities } from "./Amenties"
 
 export class Apartment {
+    id: String;
     numBeds: number;
     numBaths: number;
     address: string;

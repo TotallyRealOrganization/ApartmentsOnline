@@ -32,29 +32,42 @@
         </mat-card-header>
         <mat-card-content>
         
-            <mat-form-field appearance="fill">
-                <mat-label>Input</mat-label>
-                <input [formControl]="email" matInput placeholder="thing">
-                <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
-              </mat-form-field>
-              <br>
-              <mat-form-field appearance="fill">
-                  <mat-label>Input</mat-label>
-                  <input [formControl]="email" matInput placeholder="thing">
-                  <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
-                </mat-form-field>
-                <br>
+            <form [formGroup]="aptForm" (ngSubmit)="onSubmit()">
                 <mat-form-field appearance="fill">
-                  <mat-label>Input</mat-label>
-                  <input [formControl]="email" matInput placeholder="thing">
-                  <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                    <mat-label>Address</mat-label>
+                    <input matInput placeholder="Address">
+                    <!-- <mat-error *ngIf="aptForm.get('address').hasError('required')">
+                        Email is <strong>required</strong>
+                    </mat-error> -->
                 </mat-form-field>
                 <br>
-
+                <div class="row">
+                    <mat-form-field appearance="fill">
+                        <mat-label># Bedrooms</mat-label>
+                        <input type="number" matInput placeholder="1">
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label># Bathrooms</mat-label>
+                        <input type="number" matInput placeholder="1">
+                    </mat-form-field>
+                </div>
+                <br>
+                <div class="row">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Area (sq. ft.)</mat-label>
+                        <input type="number" matInput placeholder="800">
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Price (monthly)</mat-label>
+                        <input type="number" matInput placeholder="1250.00">
+                    </mat-form-field>
+                </div>
+                <br>
+                <button mat-raised-button color="primary" type="submit">Create Listing</button>
+            </form>
         </mat-card-content>
-        <mat-card-actions>
-            <button mat-button>Create Listing</button>
-        </mat-card-actions>
     </mat-card>
   </div>
   

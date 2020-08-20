@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Validators, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 import { Apartment } from '../../../models/Apartment'
 
@@ -9,24 +9,28 @@ import { Apartment } from '../../../models/Apartment'
   styleUrls: ['./create-listing.component.css']
 })
 export class CreateListingComponent implements OnInit {
-  apt: Apartment
-  email = new FormControl('', [Validators.required])
-  
-  getErrorMessage() {
-    return this.email.hasError('required') ? 'You must enter a value' :
-        this.email.hasError('email') ? 'Not a valid email' :
-            '';
-  }
 
-  constructor() {  } 
+  aptForm: FormGroup
+
 
   ngOnInit(): void {
+    this.aptForm = new FormGroup({
+      address: new FormControl('', [Validators.required]),
+      numBeds: new FormControl('', [Validators.required]),
+      numBaths: new FormControl('', [Validators.required]),
+      area: new FormControl('', [Validators.required]),
+      imgURL: new FormControl('', [Validators.required]),
+      price: new FormControl('', [Validators.required]),
+      utilDetails: new FormControl('', [Validators.required]),
+      restrictions: new FormControl('', [Validators.required]),
+    })
 
+    console.log(this.aptForm.get('address'))
   }
 
 
   onSubmit(): void {
-  
+    console.log('a')
   }
 
 }

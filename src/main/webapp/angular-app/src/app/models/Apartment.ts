@@ -2,11 +2,14 @@ import { User } from "./User";
 import { Amenities } from "./Amenties"
 
 export class Apartment {
-    owner: User
-    area: Number
-    imgURL: String
-    price: Number
-    amenities: Amenities
-    utilDetails: String
-    restrictions: String
+    numBeds: number;
+    numBaths: number;
+    address: string;
+    owner: User;
+    area: number;
+    imgURL: string;
+    price: number;
+    amenities: Amenities;
+    utilDetails: string;
+    restrictions: string;
 }

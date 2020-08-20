@@ -17,7 +17,8 @@ script:
 dist: trusty
 jdk: oraclejdk8
 before_script:
-- cd src/main
+- cd /
+- cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline
 script:
  - mvn test
 notifications:

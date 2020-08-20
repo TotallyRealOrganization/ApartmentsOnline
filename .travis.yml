@@ -1,0 +1,26 @@
+matrix:
+  include:
+       -language: node_js
+        node_js:"6.14.4"
+        dist: trusty
+        sudo: required
+         branches:
+             only:
+                - master
+         before_script:
+             - cd
+             - npm install -g @angular/cli
+         script:
+             - ng lint
+             - ng build --prod --base-href https://github.com/TotallyRealOrganization/ApartmentsOnline.git
+- language: java
+  dist: trusty
+  jdk: oraclejdk8
+  before_script:
+ 	- cd src/main
+  script:
+	- mvn test
+notifications:
+	email:
+	-finchjavar@yahoo.com 
+

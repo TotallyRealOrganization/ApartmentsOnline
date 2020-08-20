@@ -19,8 +19,8 @@ matrix:
   before_script:
  	- cd src/main
   script:
-	- mvn test
+        - mvn test
 notifications:
-	email:
-	-finchjavar@yahoo.com 
+         email:
+        -finchjavar@yahoo.com 
 

@@ -16,6 +16,8 @@ script:
 - language: java
 dist: trusty
 jdk: oraclejdk8
+before_script:
+- cd ApartmentsOnline
 script:
  - mvn test
 notifications:

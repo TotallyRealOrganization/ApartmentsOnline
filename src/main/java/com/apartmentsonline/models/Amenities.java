@@ -4,6 +4,7 @@ import java.util.UUID;
 
 public class Amenities {
     private UUID id;
+    private UUID apartmentID;
     private boolean washerDryer;
     private boolean airConditioning;
     private boolean furniture;
@@ -18,6 +19,14 @@ public class Amenities {
 
     public UUID getId() {
         return id;
+    }
+
+    public UUID getApartmentID() {
+        return apartmentID;
+    }
+
+    public void setApartmentID(UUID apartmentID) {
+        this.apartmentID = apartmentID;
     }
 
     public boolean isWasherDryer() {

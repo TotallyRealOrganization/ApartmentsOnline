@@ -4,10 +4,10 @@ import java.util.UUID;
 
 public class Apartment {
     private UUID id;
+    private UUID userID;
     private int numBeds;
     private int numBaths;
     private String address;
-    private User user;
     private double area;
     private String imgURL;
     private double price;
@@ -17,6 +17,18 @@ public class Apartment {
 
     public Apartment() {
         this.id = UUID.randomUUID();
+    }
+
+    public UUID getId() {
+        return id;
+    }
+
+    public UUID getUserID() {
+        return userID;
+    }
+
+    public void setUserID(UUID userID) {
+        this.userID = userID;
     }
 
     public int getNumBeds() {
@@ -41,14 +53,6 @@ public class Apartment {
 
     public void setAddress(String address) {
         this.address = address;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
     }
 
     public double getArea() {

@@ -1,10 +1,10 @@
 <div class="footer" ng-app="footer">
     <footer class="md-padding">
         <div class="flex-container">
-            <mat-toolbar color="primary"><span><a href="">Home</a></span></mat-toolbar>
-            <mat-toolbar color="primary"><span><a href="/login">Login</a></span></mat-toolbar>
-            <mat-toolbar color="primary"><span><a href="/create-listing">Post a Listing</a></span></mat-toolbar>
-            <mat-toolbar color="primary"><span><a href="">About Us</a></span></mat-toolbar>
+            <mat-toolbar color="primary"><span><a mat-button [routerLink]="home">Home</a></span></mat-toolbar>
+            <mat-toolbar color="primary"><span><a mat-button [routerLink]="login">Login</a></span></mat-toolbar>
+            <mat-toolbar color="primary"><span><a mat-button [routerLink]="createListing">Post a Listing</a></span></mat-toolbar>
+            <mat-toolbar color="primary"><span><a mat-button [routerLink]="aboutUs">About Us</a></span></mat-toolbar>
         </div>
     </footer>
 </div>

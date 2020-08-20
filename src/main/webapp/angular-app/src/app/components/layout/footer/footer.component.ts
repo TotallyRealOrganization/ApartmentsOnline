@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  login = "/login";
+  createListing = "/create-listing"
+  home = "";
+  aboutUs = "";
+
   constructor() { }
 
   ngOnInit(): void {

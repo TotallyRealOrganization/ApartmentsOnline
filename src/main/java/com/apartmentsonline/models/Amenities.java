@@ -1,16 +1,35 @@
 package com.apartmentsonline.models;
 
-import java.util.UUID;
+import org.hibernate.annotations.Type;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import java.util.UUID;
+@Entity
+@Table(name = "amenities")
 public class Amenities {
+    @Id
+    @Type(type = "pg-uuid")
+    @Column(name = "amenities_id")
     private UUID id;
+    @Type(type = "pg-uuid")
+    @Column(name = "apartment_id")
     private UUID apartmentID;
+    @Column(name = "washer_dryer")
     private boolean washerDryer;
+    @Column(name = "air_conditioning")
     private boolean airConditioning;
+    @Column(name = "furniture")
     private boolean furniture;
+    @Column(name = "dishwasher")
     private boolean dishwasher;
+    @Column(name = "balcony")
     private boolean balcony;
+    @Column(name = "fitness")
     private boolean fitness;
+    @Column(name = "indoor_parking")
     private boolean indoorParking;
 
     public Amenities() {

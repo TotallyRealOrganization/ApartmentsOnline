@@ -8,7 +8,7 @@
         <mat-label>Password</mat-label>
     <input matInput type="password" (keyup)="getPassword($event)">
     </mat-form-field> <br>
-    <a [routerLink]="[password]"><button mat-stroked-button color="primary">Log in</button></a>
+    <button mat-stroked-button color="primary" routerLink="dashboard">Log in</button>
     <button mat-stroked-button color="primary">Create Account</button>
     <span>{{ username }}</span>
     <span>{{ password }}</span>

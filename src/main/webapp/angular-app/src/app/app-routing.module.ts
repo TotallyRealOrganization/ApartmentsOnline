@@ -14,8 +14,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent},
   { path: 'posted-apartments', component: PostedApartmentsComponent},
   { path: 'saved-apartments', component: SavedApartmentsComponent},
-  { path: "**", component: HomeComponent},
   { path: 'all-listings', component: AllListingsComponent},
+  { path: "**", component: HomeComponent},
 ];
 
 @NgModule({

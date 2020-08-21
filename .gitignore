@@ -1,2 +1,4 @@
 # Created by .ignore support plugin (hsz.mobi)
 src/main/webapp/angular-app/node_modules/
+/target
+

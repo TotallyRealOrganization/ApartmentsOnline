@@ -11,25 +11,35 @@ public class Apartment {
     @Type(type = "pg-uuid")
     @Column(name = "apartment_id")
     private UUID id;
+
     @Type(type = "pg-uuid")
     @Column(name = "user_id")
     private UUID userID;
+
     @Column(name = "num_beds")
     private int numBeds;
+
     @Column(name = "num_baths")
     private int numBaths;
+
     @Column(name = "address")
     private String address;
+
     @Column(name = "area")
     private double area;
+
     @Column(name = "img_url")
     private String imgURL;
+
     @Column(name = "price")
     private double price;
+
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Amenities amenities;
+
     @Column(name = "util_details")
     private String utilDetails;
+
     @Column(name = "restrictions")
     private String restrictions;
 

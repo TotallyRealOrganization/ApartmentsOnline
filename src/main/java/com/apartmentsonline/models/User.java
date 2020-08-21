@@ -10,16 +10,21 @@ import java.util.UUID;
 public class User {
     @Column(name = "email", nullable = false)
     private String email;
+
     @Column(name = "fullName")
     private String fullName;
+
     @Column(name = "password")
     private String password;
+
     @Id
     @Type(type = "pg-uuid")
     @Column(name = "user_id")
     private UUID id;
+
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "id")
     private Set<Apartment> listedApartments;
+
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "id")
     private Set<Apartment> savedApartments;
 

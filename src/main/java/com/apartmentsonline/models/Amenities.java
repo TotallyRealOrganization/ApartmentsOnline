@@ -40,6 +40,18 @@ public class Amenities {
     @Column(name = "indoor_parking")
     private boolean indoorParking;
 
+    public Amenities(UUID apartmentID, boolean washerDryer, boolean airConditioning, boolean furniture, boolean dishwasher, boolean balcony, boolean fitness, boolean indoorParking) {
+        this.id = UUID.randomUUID();
+        this.apartmentID = apartmentID;
+        this.washerDryer = washerDryer;
+        this.airConditioning = airConditioning;
+        this.furniture = furniture;
+        this.dishwasher = dishwasher;
+        this.balcony = balcony;
+        this.fitness = fitness;
+        this.indoorParking = indoorParking;
+    }
+
     public Amenities() {
         this.id = UUID.randomUUID();
     }

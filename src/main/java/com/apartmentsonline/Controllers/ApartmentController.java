@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.UUID;
 
 @RestController
 @RequestMapping(path = "/apartment")
@@ -25,8 +26,15 @@ public class ApartmentController {
     @ResponseBody
     public ResponseEntity<Apartment> getById(@PathVariable("apartmentId") String apartmendId) {
         Apartment apartment = apartmentService.getById(apartmendId);
-        System.out.println("aparment controller found");
         return ResponseEntity.ok().body(apartment);
+    }
+
+    // save apartment
+    @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
+    @ResponseBody
+    public ResponseEntity<String> saveApartment(@RequestBody Apartment apartment) {
+        Apartment savedApartment = apartmentService.saveApartment(apartment);
+        return ResponseEntity.ok().body("Apartment saved: " + savedApartment);
     }
 
 }

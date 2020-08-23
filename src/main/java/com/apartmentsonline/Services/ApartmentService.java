@@ -23,4 +23,9 @@ public class ApartmentService {
         return apartmentDAO.getById(apartmentId);
     }
 
+    @Transactional
+    public Apartment saveApartment(Apartment newApartment) {
+        return apartmentDAO.saveApartment(newApartment);
+    }
+
 }

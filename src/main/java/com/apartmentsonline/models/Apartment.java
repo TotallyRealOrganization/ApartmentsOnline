@@ -35,7 +35,7 @@ public class Apartment {
     private double price;
 
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @Column(name = "amenities_id")
+    @JoinColumn(name = "amenities_id")
     private Amenities amenities;
 
     @Column(name = "util_details")

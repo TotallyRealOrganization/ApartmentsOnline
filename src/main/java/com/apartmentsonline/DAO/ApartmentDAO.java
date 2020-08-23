@@ -4,7 +4,9 @@ import com.apartmentsonline.models.Apartment;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -13,6 +15,7 @@ import java.util.UUID;
 @Repository
 @Transactional
 public class ApartmentDAO {
+
     private SessionFactory sf;
     @Autowired
     public ApartmentDAO(SessionFactory sf) {

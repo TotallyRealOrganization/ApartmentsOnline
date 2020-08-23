@@ -30,6 +30,7 @@ public class ApartmentDAO {
         sesh.save(newApartment);
     return true;
     }
+
     @Transactional(isolation = Isolation.READ_COMMITTED)
     public Apartment getById(String apartmentId) {
         UUID uuid = UUID.fromString(apartmentId);
@@ -48,6 +49,7 @@ public class ApartmentDAO {
             return null;
         return apartments;
     }
+
 
 
 }

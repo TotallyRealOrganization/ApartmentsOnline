@@ -24,7 +24,7 @@ public class ApartmentService {
     }
 
     @Transactional
-    public Apartment saveApartment(Apartment newApartment) {
+    public boolean saveApartment(Apartment newApartment) {
         return apartmentDAO.saveApartment(newApartment);
     }
 

@@ -24,8 +24,6 @@ export class CreateListingComponent implements OnInit {
       utilDetails: new FormControl('', [Validators.required]),
       restrictions: new FormControl('', [Validators.required]),
     })
-
-    console.log(this.aptForm.get('address'))
   }
 
 

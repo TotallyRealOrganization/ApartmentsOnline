@@ -45,7 +45,6 @@ import {MatSortModule} from '@angular/material/sort';
 import {MatTableModule} from '@angular/material/table';
 
 import { ApartmentDetailsComponent } from './components/views/apartment-details/apartment-details.component';
-import { AmenitiesComponent } from './components/apartments/amenities/amenities.component';
 import { RestrictionsComponent } from './components/apartments/restrictions/restrictions.component';
 import { ApartmentCardComponent } from './components/shared/apartment-card/apartment-card.component';
 import { LoginComponent } from './components/views/login/login.component';
@@ -103,7 +102,6 @@ const AllMaterialModules=[
     AppComponent,
     HeaderComponent,
     ApartmentDetailsComponent,
-    AmenitiesComponent,
     RestrictionsComponent,
     ApartmentCardComponent,
     LoginComponent,

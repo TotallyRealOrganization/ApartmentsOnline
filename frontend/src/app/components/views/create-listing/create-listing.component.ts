@@ -12,7 +12,6 @@ export class CreateListingComponent implements OnInit {
 
   aptForm: FormGroup
 
-
   ngOnInit(): void {
     this.aptForm = new FormGroup({
       address: new FormControl('', [Validators.required]),

@@ -1,5 +1,4 @@
 import { User } from "./User";
-import { Amenities } from "./Amenties"
 
 export class Apartment {
     id: String;
@@ -10,7 +9,6 @@ export class Apartment {
     area: number;
     imgURL: string;
     price: number;
-    amenities: Amenities;
     utilDetails: string;
     restrictions: string;
 }

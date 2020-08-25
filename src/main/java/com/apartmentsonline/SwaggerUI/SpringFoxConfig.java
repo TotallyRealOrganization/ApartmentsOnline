@@ -3,6 +3,7 @@ package com.apartmentsonline.SwaggerUI;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
@@ -20,6 +21,7 @@ import java.util.Collections;
 
 @Configuration
 @EnableSwagger2
+@EnableWebMvc
 public class SpringFoxConfig {
 
     private ApiInfo apiInfo() {
@@ -44,30 +46,5 @@ public class SpringFoxConfig {
                 .paths(PathSelectors.any())
                 .build();
     }
-
-    /**
-     * SwaggerUI information
-     */
-
-    @Bean
-    UiConfiguration uiConfig() {
-        return UiConfigurationBuilder.builder()
-                .deepLinking(true)
-                .displayOperationId(false)
-                .defaultModelsExpandDepth(1)
-                .defaultModelExpandDepth(1)
-                .defaultModelRendering(ModelRendering.EXAMPLE)
-                .displayRequestDuration(false)
-                .docExpansion(DocExpansion.NONE)
-                .filter(false)
-                .maxDisplayedTags(null)
-                .operationsSorter(OperationsSorter.ALPHA)
-                .showExtensions(false)
-                .tagsSorter(TagsSorter.ALPHA)
-                .supportedSubmitMethods(UiConfiguration.Constants.DEFAULT_SUBMIT_METHODS)
-                .validatorUrl(null)
-                .build();
-    }
-
 }
 

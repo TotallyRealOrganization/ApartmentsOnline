@@ -45,4 +45,9 @@ public class ApartmentDAOTest {
     public void getAllApartments() {
         Assert.assertNotNull(test.getAllApartments());
     }
+
+    @Test
+    public void getById() {
+        Assert.assertNotNull(test.getById("88e347da-6072-49f8-8c95-b71bb77d0f1f"));
+    }
 }

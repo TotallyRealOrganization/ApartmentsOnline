@@ -8,7 +8,8 @@ branches:
 only:
 - master
 before_script:
-- cd src/main/webapp/angular-app
+- cd /
+- cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline/frontend
 - npm install -g @angular/cli
 script:
 - ng lint

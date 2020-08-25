@@ -10,17 +10,24 @@ const apiUrl: string = window.location.protocol + "//" + window.location.host + 
 })
 export class UserService {
 
+  user: User
+
   constructor(private http: HttpClient) { }
 
-  login(u: string, p: string): void {
+  login(u: string, p: string): Observable<User> {
     console.log(`logging in for ${u} with ${p}`)
-    // return this.http.post<User>(`${apiUrl}/user/login`, {username: u, password: p})
+    return this.http.post<User>(`${apiUrl}/user/login`, {username: u, password: p})
   }
   
-  register(user: User ): void {
+  register(u: User ): Observable<User> {
     console.log('registering')
-    console.log(user)
-    // return this.http.post<boolean>(`${apiUrl}/user/register`, user)
+    console.log(u)
+    let usr = this.http.post<User>(`${apiUrl}/user/register`, u)
+    usr.subscribe(e => {
+      this.user = e
+      console.log(this.user)
+    })
+    return usr
   }
 
 }

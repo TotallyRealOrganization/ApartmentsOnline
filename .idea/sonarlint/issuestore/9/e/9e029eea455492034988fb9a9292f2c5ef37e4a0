@@ -1,4 +1,12 @@
 
+T
+java:S1128"2Remove this unused import 'org.hibernate.Session'.(È¹›§ùÿÿÿÿ8ë‹é²Â.
+w
+java:S1128	"URemove this unused import 'org.springframework.transaction.annotation.Transactional'.(ðùçøùÿÿÿÿ8ë‹é²Â.
+n
+java:S1128"QRemove this unused import 'org.springframework.transaction.annotation.Isolation'.(±§ÂÔ8ë‹é²Â.
+M
+java:S1128"+Remove this unused import 'java.util.UUID'.(ÀãÄ£úÿÿÿÿ8ë‹é²Â.
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ˆø Œýÿÿÿÿ
-_
-java:S2094"BRemove this empty class, write its code or make it an "interface".(ÔÄëª8 íý¡Á.
+c
+java:S1126"AReplace this if-then-else statement by a single return statement.(ÜçÌÀþÿÿÿÿ8ØØ›³Â.

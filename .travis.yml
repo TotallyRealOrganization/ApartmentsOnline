@@ -26,7 +26,6 @@ jobs:
      - npm install -g @angular/cli
      - npm install
     script:
-     - ng lint
      - ng test --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
      - ng build --prod --base-href https://github.com/TotallyRealOrganization/ApartmentsOnline.git
   - stage: backend

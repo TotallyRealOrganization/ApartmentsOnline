@@ -13,3 +13,8 @@
     background-image: url('/assets/nounApartments.png');
     background-size: cover;
   }
+
+.container {
+  height: 80vh;
+  overflow: scroll;
+}

@@ -20,12 +20,17 @@ public class UserService {
         this.userDAO = userDAO;
     }
 
-    public User saveNewUser(User user) {
-        return userDAO.saveNewUser(user);
+    public boolean saveNewUser(User user) {
+        User use = userDAO.saveNewUser(user);
+        if (use != null)
+            return true;
+        return false;
     }
 
     public User getUserById(String id) {
-        return userDAO.getUserById(id);
+        if (id != null)
+            return userDAO.getUserById(id);
+        return null;
     }
 
     public boolean removeUser(User u) {

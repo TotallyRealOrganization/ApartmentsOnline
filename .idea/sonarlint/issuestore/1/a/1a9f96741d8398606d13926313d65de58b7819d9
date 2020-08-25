@@ -1,16 +1,16 @@
 
-~
-java:S1488&"aImmediately return this expression instead of assigning it to the temporary variable "apartment".(ÌÎú8ØÔËÁ.
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Œîíóùÿÿÿÿ
 U
-java:S1128"3Remove this unused import 'org.hibernate.Criteria'.(öÏ¨ÿÿÿÿÿ8ØÔËÁ.
-I
-java:S1905/"'Remove this unnecessary cast to "List".(Ú±ì‘þÿÿÿÿ8ØÔËÁ.
+java:S1128"3Remove this unused import 'org.hibernate.Criteria'.(öÏ¨ÿÿÿÿÿ8Üµ‚ÊÁ.
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Œîíóùÿÿÿÿ
 H
-java:S11681"+Return an empty collection instead of null.(¥¹ï8ØÔËÁ.
+java:S11681"+Return an empty collection instead of null.(¥¹ï8“Ú”ÌÁ.
+~
+java:S1488&"aImmediately return this expression instead of assigning it to the temporary variable "apartment".(ÌÎú8“Ú”ÌÁ.
+I
+java:S1905/"'Remove this unnecessary cast to "List".(Ú±ì‘þÿÿÿÿ8“Ú”ÌÁ.
 `
-java:S1128"CRemove this unused import 'org.springframework.stereotype.Service'.(¼º¡Ú8ØÔËÁ.
-`
-java:S11550">Use isEmpty() to check whether the collection is empty or not.(ˆÁ¼®ùÿÿÿÿ8ØÔËÁ.
+java:S1128"CRemove this unused import 'org.springframework.stereotype.Service'.(¼º¡Ú8Ž€ÇÈÁ.
 u
-java:S1128	"SRemove this unused import 'org.springframework.beans.factory.annotation.Qualifier'.(íàÄ®ýÿÿÿÿ8ØÔËÁ.
+java:S1128	"SRemove this unused import 'org.springframework.beans.factory.annotation.Qualifier'.(íàÄ®ýÿÿÿÿ8Ž€ÇÈÁ.
+`
+java:S11550">Use isEmpty() to check whether the collection is empty or not.(ˆÁ¼®ùÿÿÿÿ8“Ú”ÌÁ.

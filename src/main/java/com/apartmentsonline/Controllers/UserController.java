@@ -31,11 +31,27 @@ public class UserController {
         return new ResponseEntity<>(user, HttpStatus.OK);
     }
 
-    @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping( path = "/register", consumes = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
-    public ResponseEntity<String> saveNewUser(@RequestBody User user) {
-        User u = userService.saveNewUser(user);
-        return ResponseEntity.ok().body("New User created: Id = " + u.getId());
+    public ResponseEntity<User> saveNewUser(@RequestBody User user) {
+        boolean u = userService.saveNewUser(user);
+        if (u)
+            return new ResponseEntity<>(user, HttpStatus.OK);
+        else  {
+            return new ResponseEntity<>( HttpStatus.valueOf(401));
+        }
+
     }
+
+    @PostMapping(path = "/login", consumes = MediaType.APPLICATION_JSON_VALUE)
+    @ResponseBody
+    public ResponseEntity<User> userLogin(@RequestBody User user) {
+        User use = userService.getUserById(user.getId().toString());
+        if (use != null)
+            return new ResponseEntity<>(use, HttpStatus.OK);
+        return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+
+    }
+
 
 }

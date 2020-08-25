@@ -30,7 +30,9 @@ public class UserDAO {
         UUID uuid = UUID.fromString(id);
         Session sesh = sf.getCurrentSession();
         User u = (User) sesh.get(User.class, uuid);
-        return u;
+        if (u != null)
+            return u;
+        return null;
     }
 
     @Transactional(isolation = Isolation.SERIALIZABLE)

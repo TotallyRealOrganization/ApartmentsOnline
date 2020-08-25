@@ -11,4 +11,18 @@ export class Apartment {
     price: number;
     utilDetails: string;
     restrictions: string;
+
+    constructor(beds: number, baths: number, address: string, area: number, img: string, price: number, util: string, rest: string) {
+        this.numBaths = beds
+        this.numBaths = baths
+        this.address = address
+        this.area = area
+        this.imgURL = img
+        this.price = price
+        this.utilDetails = util
+        this.restrictions = rest
+
+        
+
+    }
 }

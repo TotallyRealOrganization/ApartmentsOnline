@@ -25,7 +25,6 @@ export class CreateListingComponent implements OnInit {
     })
   }
 
-
   onSubmit(): void {
     console.log('a')
   }

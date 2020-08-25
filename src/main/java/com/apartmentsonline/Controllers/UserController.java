@@ -46,7 +46,7 @@ public class UserController {
     @PostMapping(path = "/login", consumes = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
     public ResponseEntity<User> userLogin(@RequestBody User user) {
-        User use = userService.getUserById(user.getId().toString());
+        User use = userService.getUserByEmail(user.getEmail());
         if (use != null)
             return new ResponseEntity<>(use, HttpStatus.OK);
         return new ResponseEntity<>(HttpStatus.BAD_REQUEST);

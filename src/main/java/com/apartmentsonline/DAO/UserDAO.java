@@ -1,8 +1,10 @@
 package com.apartmentsonline.DAO;
 
 import com.apartmentsonline.models.User;
+import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Isolation;
@@ -30,6 +32,16 @@ public class UserDAO {
         UUID uuid = UUID.fromString(id);
         Session sesh = sf.getCurrentSession();
         User u = (User) sesh.get(User.class, uuid);
+        if (u != null)
+            return u;
+        return null;
+    }
+
+    @Transactional(isolation = Isolation.READ_COMMITTED)
+    public User getUserByEmail(String email) {
+        Session sesh = sf.getCurrentSession();
+        Criteria criteria = sesh.createCriteria(User.class);
+        User u = (User) criteria.add(Restrictions.eq("email", email)).uniqueResult();
         if (u != null)
             return u;
         return null;

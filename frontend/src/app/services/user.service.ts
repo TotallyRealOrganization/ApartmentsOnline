@@ -20,7 +20,7 @@ export class UserService {
   register(user: User ): void {
     console.log('registering')
     console.log(user)
-    // return this.http.post<User>(`${apiUrl}/user/register`, user)
+    // return this.http.post<boolean>(`${apiUrl}/user/register`, user)
   }
 
 }

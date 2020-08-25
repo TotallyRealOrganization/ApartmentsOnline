@@ -32,6 +32,12 @@ public class UserService {
             return userDAO.getUserById(id);
         return null;
     }
+    
+    public User getUserByEmail(String email) {
+        if (email != null)
+            return userDAO.getUserByEmail(email);
+        return null;
+    }
 
     public boolean removeUser(User u) {
        return userDAO.removeUser(u);

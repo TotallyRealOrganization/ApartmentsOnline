@@ -7,11 +7,13 @@ import { PostedApartmentsComponent } from './components/views/posted-apartments/
 import { SavedApartmentsComponent } from './components/views/saved-apartments/saved-apartments.component';
 import { AllListingsComponent } from './components/views/all-listings/all-listings.component';
 import { HomeComponent } from './components/views/home/home.component';
+import { RegisterComponent } from './components/views/register/register.component';
 
 const routes: Routes = [
   { path: 'create-listing', component: CreateListingComponent},
   { path: 'apartment-details', component: ApartmentDetailsComponent},
   { path: 'login', component: LoginComponent},
+  { path: 'register', component: RegisterComponent},
   { path: 'posted-apartments', component: PostedApartmentsComponent},
   { path: 'saved-apartments', component: SavedApartmentsComponent},
   { path: 'all-listings', component: AllListingsComponent},

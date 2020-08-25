@@ -4,17 +4,8 @@
     align-items: center;
     height: 80vh;
 }
-.card {
-    width: 80vw;
-}
+
 .row {
     display: flex;
     flex-direction: row;
-}
-
-.full-width {
-    width: 100%;
-}
-.half-width {
-    width: 50%;
 }

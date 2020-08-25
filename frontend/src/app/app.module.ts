@@ -57,6 +57,7 @@ import { FooterComponent } from './components/layout/footer/footer.component';
 import { CreateListingComponent } from './components/views/create-listing/create-listing.component';
 import { HomeComponent } from './components/views/home/home.component';
 import { AllListingsComponent } from './components/views/all-listings/all-listings.component';
+import { RegisterComponent } from './components/views/register/register.component';
 
 const AllMaterialModules=[
   MatAutocompleteModule,
@@ -113,6 +114,7 @@ const AllMaterialModules=[
     CreateListingComponent,
     HomeComponent,
     AllListingsComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,10 +1,10 @@
 
-v
-java:S2293!"YReplace the type specification in this constructor call with the diamond operator ("<>").(¼öÂ8¡Ó”ÌÁ.
+b
+java:S4684'"@Replace this persistent entity with a simple POJO or DTO object.(ÉÍ²ƒøÿÿÿÿ8á³÷ÊÁ.
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(âŸ¤Ç
 M
-java:S1128"+Remove this unused import 'java.util.UUID'.(ÀãÄ£úÿÿÿÿ8¡Ó”ÌÁ.
+java:S1128"+Remove this unused import 'java.util.UUID'.(ÀãÄ£úÿÿÿÿ8­ƒÒ™Â.
 {
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(šÈ“²ÿÿÿÿÿ8Â¿¡ÌÁ.
-b
-java:S4684'"@Replace this persistent entity with a simple POJO or DTO object.(ÉÍ²ƒøÿÿÿÿ8¡Ó”ÌÁ.
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(šÈ“²ÿÿÿÿÿ8­ƒÒ™Â.
+v
+java:S2293!"YReplace the type specification in this constructor call with the diamond operator ("<>").(¼öÂ8­ƒÒ™Â.

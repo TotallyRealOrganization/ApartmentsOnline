@@ -22,11 +22,11 @@ public class SpringFoxConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfo(
-                "My REST API",
-                "Some custom description of API.",
+                "ApartmentsOnline REST API",
+                "A website to find apartments based on your needs and preferences.",
                 "API TOS",
                 "Terms of service",
-                new Contact("John Doe", "www.example.com", "myeaddress@company.com"),
+                new Contact("Project2", "www.ApartmentsOnline", "revatureProject2"),
                 "License of API",
                 "API license URL",
                 Collections.emptyList());
@@ -35,6 +35,7 @@ public class SpringFoxConfig {
     @Bean
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
+                .host("http://localhost:8080")
                 .apiInfo(apiInfo())
                 .select()
                 .apis(RequestHandlerSelectors.any())

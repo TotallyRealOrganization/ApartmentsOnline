@@ -6,13 +6,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-@RestController
+@Controller
 @RequestMapping(path = "/apartment")
 public class ApartmentController {
 
@@ -24,13 +25,11 @@ public class ApartmentController {
     }
 
     // get apartments by apartmentId
-    @GetMapping(path="/{apartmentId}", produces = MediaType.TEXT_PLAIN_VALUE)
+    @GetMapping(path="/{apartmentId}", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
-    public ResponseEntity<List<Apartment>> getById(@PathVariable("apartmentId") String apartmendId) {
-        List<Apartment> apartments = new ArrayList<Apartment>();
+    public ResponseEntity<Apartment> getById(@PathVariable("apartmentId") String apartmendId) {
         Apartment apartment = apartmentService.getById(apartmendId);
-        apartments.add(apartment);
-        return new ResponseEntity<List<Apartment>>(apartments, HttpStatus.OK);
+        return new ResponseEntity<>(apartment, HttpStatus.OK);
     }
 
     // save apartment

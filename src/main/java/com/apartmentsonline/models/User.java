@@ -6,15 +6,15 @@ import javax.persistence.*;
 import java.util.Set;
 import java.util.UUID;
 @Entity
-@Table(name = "USER")
+@Table(name = "users")
 public class User {
     @Column(name = "email", nullable = false)
     private String email;
 
-    @Column(name = "fullName")
+    @Column(name = "fullname")
     private String fullName;
 
-    @Column(name = "password")
+    @Column(name = "pword")
     private String password;
 
     @Id

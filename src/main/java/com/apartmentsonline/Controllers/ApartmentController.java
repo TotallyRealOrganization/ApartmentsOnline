@@ -8,6 +8,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -25,9 +26,11 @@ public class ApartmentController {
     // get apartments by apartmentId
     @GetMapping(path="/{apartmentId}", produces = MediaType.TEXT_PLAIN_VALUE)
     @ResponseBody
-    public ResponseEntity<Apartment> getById(@PathVariable("apartmentId") String apartmendId) {
+    public ResponseEntity<List<Apartment>> getById(@PathVariable("apartmentId") String apartmendId) {
+        List<Apartment> apartments = new ArrayList<Apartment>();
         Apartment apartment = apartmentService.getById(apartmendId);
-        return new ResponseEntity<Apartment>(apartment, HttpStatus.OK);
+        apartments.add(apartment);
+        return new ResponseEntity<List<Apartment>>(apartments, HttpStatus.OK);
     }
 
     // save apartment

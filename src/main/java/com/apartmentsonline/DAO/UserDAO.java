@@ -32,4 +32,11 @@ public class UserDAO {
         User u = (User) sesh.get(User.class, uuid);
         return u;
     }
+
+    @Transactional(isolation = Isolation.SERIALIZABLE)
+    public boolean removeUser(User u) {
+        Session sesh = sf.getCurrentSession();
+        sesh.delete(u);
+        return true;
+    }
 }

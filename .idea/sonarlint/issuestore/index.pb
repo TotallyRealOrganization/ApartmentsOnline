@@ -18,3 +18,11 @@ h
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+l
+<src/test/java/com/apartmentsOnline/tests/DAO/TestConfig.java,0\2\02037c4a58000a49287103759069f955c3d909ea
+r
+Bsrc/test/java/com/apartmentsOnline/tests/DAO/ApartmentDAOTest.java,7\e\7ecb4e9f94fe5ce8f9d13d27b2925f02c65e83e4
+q
+Asrc/main/java/com/apartmentsonline/Services/ApartmentService.java,b\6\b623952ac9d0c329a27628d93ffe39568d4f6258
+w
+Gsrc/main/java/com/apartmentsonline/Controllers/ApartmentController.java,6\4\64e694f81b505f3bf0330ede8c5ea100316e44ae

@@ -7,31 +7,31 @@
     <mat-menu #menu="matMenu">
       <button mat-menu-item>
         <mat-icon>home</mat-icon>
-        <span>Home</span>
+        <span><a mat-button [routerLink]="home">Home</a></span>
       </button>
       <button mat-menu-item>
         <mat-icon>assessment</mat-icon>
-        <span>All Listings</span>
+        <span><a mat-button [routerLink]="allListings">All Listings</a></span>
       </button>
       <button mat-menu-item>
         <mat-icon>arrow_right_alt</mat-icon>
-        <span>Create Listing</span>
+        <span><a mat-button [routerLink]="createListing">Create Listing</a></span>
       </button>
       <button mat-menu-item>
         <mat-icon>assignment</mat-icon>
-        <span>Posted Apartments</span>
+        <span><a mat-button [routerLink]="postedApartments">Posted Apartments</a></span>
       </button>
       <button mat-menu-item>
         <mat-icon>assignment</mat-icon>
-        <span>Saved Apartments</span>
+        <span><a mat-button [routerLink]="savedApartments">Saved Apartments</a></span>
       </button>
       <button mat-menu-item>
         <mat-icon>assignment_ind</mat-icon>
-        <span>Login</span>
+        <span><a mat-button [routerLink]="login">Login</a></span>
       </button>
       <button mat-menu-item>
         <mat-icon>assignment_ind</mat-icon>
-        <span>Register</span>
+        <span><a mat-button [routerLink]="register">Register</a></span>
       </button>
     </mat-menu>
 

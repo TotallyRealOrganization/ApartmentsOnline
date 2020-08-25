@@ -7,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  login = "/login";
+  createListing = "/create-listing";
+  home = "";
+  aboutUs = "";
+  postedApartments = "/posted-apartments";
+  savedApartments = "/saved-apartments";
+  allListings = "/all-listings";
+  register="/register";
+
   constructor() { }
 
   ngOnInit(): void {

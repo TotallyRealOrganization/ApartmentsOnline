@@ -15,6 +15,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 import java.util.Collections;
 
 // documentation here https://www.baeldung.com/swagger-2-documentation-for-spring-rest-api
+// only way its working so far => localhost:8080/swagger-ui.html then enter localhost:8080/api for when prompted with
+// base url
 
 @Configuration
 @EnableSwagger2

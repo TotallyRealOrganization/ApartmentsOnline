@@ -57,9 +57,9 @@ public class UserController {
 
     }
 
-    @PutMapping(path = "/updateUser/{User}",consumes = MediaType.APPLICATION_JSON_VALUE)
+    @PutMapping(path = "/updateUser",consumes = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
-    public ResponseEntity<User> updateUser(@PathVariable User user) {
+    public ResponseEntity<User> updateUser(@RequestBody User user) {
         User user1 = userService.updateUser(user);
         return new ResponseEntity<>(user1,HttpStatus.OK);
     }

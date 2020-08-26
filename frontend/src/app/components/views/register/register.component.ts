@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 import { UserService } from '../../../services/user.service'
 import { User } from 'src/app/models/User';
@@ -13,7 +14,7 @@ export class RegisterComponent implements OnInit {
 
   registerForm: FormGroup
 
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService, private router: Router) { }
 
   ngOnInit(): void {
     this.registerForm = new FormGroup({
@@ -30,7 +31,10 @@ export class RegisterComponent implements OnInit {
     
     const u: User = new User(e, p, fName)
     
-    this.userService.register(u).subscribe(e => console.log(e))
+    this.userService.register(u).subscribe(e => {
+      console.log(e)
+      this.router.navigate(['/home'])
+    })
   }
 
 }

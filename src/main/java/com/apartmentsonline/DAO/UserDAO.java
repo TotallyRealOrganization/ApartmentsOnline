@@ -7,6 +7,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -52,5 +53,12 @@ public class UserDAO {
         Session sesh = sf.getCurrentSession();
         sesh.delete(u);
         return true;
+    }
+
+    @Transactional(isolation = Isolation.SERIALIZABLE)
+    public User updateUser(User user) {
+        Session session = sf.getCurrentSession();
+        session.update(user);
+        return user;
     }
 }

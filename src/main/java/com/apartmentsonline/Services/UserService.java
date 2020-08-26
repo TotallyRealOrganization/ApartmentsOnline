@@ -42,4 +42,6 @@ public class UserService {
     public boolean removeUser(User u) {
        return userDAO.removeUser(u);
     }
+
+    public User updateUser(User user) {return userDAO.updateUser(user);}
 }

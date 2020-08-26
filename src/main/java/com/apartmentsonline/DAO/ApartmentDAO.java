@@ -1,6 +1,7 @@
 package com.apartmentsonline.DAO;
 
 import com.apartmentsonline.models.Apartment;
+import com.apartmentsonline.models.User;
 import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.hibernate.Session;
@@ -50,6 +51,12 @@ public class ApartmentDAO {
         return apartments;
     }
 
+    @Transactional(isolation = Isolation.SERIALIZABLE)
+    public boolean removeApartment(Apartment apartment) {
+        Session sesh = sf.getCurrentSession();
+        sesh.delete(apartment);
+        return true;
+    }
 
 
 }

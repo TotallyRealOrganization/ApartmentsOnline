@@ -19,6 +19,10 @@ public class ApartmentController {
 
     private ApartmentService apartmentService;
 
+    public ApartmentService getApartmentService() {
+        return apartmentService;
+    }
+
     @Autowired
     public ApartmentController(ApartmentService apartmentService) {
         this.apartmentService = apartmentService;
@@ -35,9 +39,13 @@ public class ApartmentController {
     // save apartment
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
-    public ResponseEntity<String> saveApartment(@RequestBody Apartment apartment) {
+    public ResponseEntity<Apartment> saveApartment(@RequestBody Apartment apartment) {
         boolean savedApartment = apartmentService.saveApartment(apartment);
-        return ResponseEntity.ok().body("Apartment saved: " + savedApartment);
+        if(savedApartment) {
+            return new ResponseEntity<>(apartment,HttpStatus.CREATED);
+        } else {
+            return new ResponseEntity<>(HttpStatus.valueOf(401));
+        }
     }
 
 }

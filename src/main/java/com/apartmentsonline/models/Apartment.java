@@ -96,6 +96,10 @@ public class Apartment {
         return imgURL;
     }
 
+    public void setId(UUID id) {
+        this.id = id;
+    }
+
     public void setImgURL(String imgURL) {
         this.imgURL = imgURL;
     }

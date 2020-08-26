@@ -28,4 +28,9 @@ public class ApartmentService {
         return apartmentDAO.saveApartment(newApartment);
     }
 
+    @Transactional
+    public boolean removeApartment(Apartment apartment) {
+        return apartmentDAO.removeApartment(apartment);
+    }
+
 }

@@ -52,7 +52,6 @@ import { SavedApartmentsComponent } from './components/views/saved-apartments/sa
 import { PostedApartmentsComponent } from './components/views/posted-apartments/posted-apartments.component';
 import { ApartmentsListComponent } from './components/shared/apartments-list/apartments-list.component';
 import { HeaderComponent } from './components/layout/header/header.component';
-import { FooterComponent } from './components/layout/footer/footer.component';
 import { CreateListingComponent } from './components/views/create-listing/create-listing.component';
 import { HomeComponent } from './components/views/home/home.component';
 import { AllListingsComponent } from './components/views/all-listings/all-listings.component';
@@ -108,7 +107,6 @@ const AllMaterialModules=[
     SavedApartmentsComponent,
     PostedApartmentsComponent,
     ApartmentsListComponent,
-    FooterComponent,
     CreateListingComponent,
     HomeComponent,
     AllListingsComponent,

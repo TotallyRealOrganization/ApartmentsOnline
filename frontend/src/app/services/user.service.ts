@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { User } from '../models/User';
+import { share } from 'rxjs/operators';
 
 const apiUrl: string = window.location.protocol + "//" + window.location.host + window.location.pathname + "api";
 
@@ -20,14 +21,15 @@ export class UserService {
   }
   
   register(u: User ): Observable<User> {
-    console.log('registering')
-    console.log(u)
-    let usr = this.http.post<User>(`${apiUrl}/user/register`, u)
+    let usr = this.http.post<User>(`${apiUrl}/user/register`, u).pipe(share())
     usr.subscribe(e => {
       this.user = e
-      console.log(this.user)
     })
     return usr
+  }
+
+  getUser(): User {
+    return this.user
   }
 
 }

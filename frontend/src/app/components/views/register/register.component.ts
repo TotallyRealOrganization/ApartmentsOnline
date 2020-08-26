@@ -29,8 +29,8 @@ export class RegisterComponent implements OnInit {
     const fName = this.registerForm.controls.fullName.value
     
     const u: User = new User(e, p, fName)
-    console.log(u)
-    this.userService.register(u)
+    
+    this.userService.register(u).subscribe(e => console.log(e))
   }
 
 }

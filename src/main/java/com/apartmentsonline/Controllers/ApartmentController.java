@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+@CrossOrigin
 @Controller
 @RequestMapping(path = "/apartment")
 public class ApartmentController {

@@ -8,9 +8,11 @@ export class User {
     listedApartments: Apartment[]
     savedApartments: Apartment[]
 
-    constructor(e: string, p: string, fName: string) {
+    constructor(e: string, p: string, fName?: string) {
         this.email = e
         this.password = p
-        this.fullName = fName
+        if (fName) {
+            this.fullName = fName
+        }
     }
 }

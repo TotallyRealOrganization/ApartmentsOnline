@@ -1,71 +1,23 @@
 <div class="container">
 
-<div class="spacedPart">
-<h1>Sort By Amenities</h1>
-<mat-chip-list aria-label="Fish selection">
-    <mat-chip>Washer/Dryer</mat-chip>
-    <mat-chip>Pets ok</mat-chip>
-    <mat-chip>Kitchen</mat-chip>
-    <mat-chip>Fireplace</mat-chip>
-    <mat-chip>Wheelchair Accessible</mat-chip>
-    <mat-chip>Kitchen</mat-chip>
-    <mat-chip>Elevator</mat-chip>
-    <mat-chip>Dishwasher</mat-chip>
-    <mat-chip>Refridgerator</mat-chip>
-  </mat-chip-list>
-</div>
-
-<mat-grid-list cols="3">
-    <mat-grid-tile>
-        <app-apartment-card></app-apartment-card>
-    </mat-grid-tile>
-
-    <mat-grid-tile>
-        <mat-card class="example-card">
-            <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>M Street</mat-card-title>
-            <mat-card-subtitle>Atlanta, GA</mat-card-subtitle>
-            </mat-card-header>
-            <img mat-card-image src="/assets/apartments.jpg" alt="apartments">
-            <mat-card-content>
-            <p>
-                On Marietta Street in Atlanta Georgia, this complex offers easy access to Georgia Tech.
-            </p>
-            </mat-card-content>
-            <mat-card-actions>
-            <button mat-button>LIKE</button>
-            <button mat-button>SHARE</button>
-            </mat-card-actions>
-        </mat-card>
-    </mat-grid-tile>
-
-    <mat-grid-tile>
-        <mat-card class="example-card">
-            <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>Ooga Booga</mat-card-title>
-            <mat-card-subtitle>Kansas City, KS</mat-card-subtitle>
-            </mat-card-header>
-            <img mat-card-image src="/assets/apartments2.jpg" alt="apartments">
-            <mat-card-content>
-            <p>
-                Courage the cowardly dog lives here!
-            </p>
-            </mat-card-content>
-            <mat-card-actions>
-            <button mat-button>LIKE</button>
-            <button mat-button>SHARE</button>
-            </mat-card-actions>
-        </mat-card>
-    </mat-grid-tile>
-
-  </mat-grid-list>
-
-    <mat-grid-list cols="3">
-        <mat-grid-tile>
-            <app-apartment-card></app-apartment-card>
-        </mat-grid-tile>
-    </mat-grid-list>    
-
+    <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Welcome</mat-card-title>
+          <mat-card-subtitle>{{user.fullName}}</mat-card-subtitle>
+        </mat-card-header>
+        
+        <mat-card-content>
+          <p>
+            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+            bred for hunting.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions>
+      </mat-card>
+      
 </div>

@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.jws.soap.SOAPBinding;
 import java.awt.*;
 
+@CrossOrigin
 @Controller
 @RequestMapping(path = "/user")
 public class UserController {

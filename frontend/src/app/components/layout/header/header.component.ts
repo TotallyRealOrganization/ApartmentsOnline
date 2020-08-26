@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-header',
@@ -16,7 +17,15 @@ export class HeaderComponent implements OnInit {
   allListings = "/all-listings";
   register="/register";
 
-  constructor() { }
+  loggedIn: boolean = false
+  loggedOut: boolean = true
+
+  constructor(private userService: UserService) {
+    userService.loggedIn.subscribe(e => {
+      this.loggedIn = e
+      this.loggedOut = !e
+    })
+  }
 
   ngOnInit(): void {
   }

@@ -1,22 +1,14 @@
 <div class="container">
 
-    <mat-card class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Welcome</mat-card-title>
-          <mat-card-subtitle>{{user.fullName}}</mat-card-subtitle>
-        </mat-card-header>
-        
+    <mat-card class="card">
         <mat-card-content>
-          <p>
-            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-            bred for hunting.
-          </p>
+            <h1>Welcome, {{user.fullName}}</h1>
         </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>LIKE</button>
-          <button mat-button>SHARE</button>
+        <mat-card-actions class="button-container">
+          <button class="b" color="primary" [routerLink]="createListing" mat-raised-button >Post an Apartment</button>
+          <button class="b" color="basic" [routerLink]="postedApartments" mat-raised-button >View your Posts</button>
+          <button class="b" color="basic" [routerLink]="allListings" mat-raised-button >view all apartments</button>
+          <button class="b" color="warn"  (click)="logout" mat-raised-button >Log out</button>
         </mat-card-actions>
       </mat-card>
       

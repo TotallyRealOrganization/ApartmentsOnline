@@ -1,10 +1,10 @@
 import { Apartment } from "./Apartment";
 
 export class User {
-    email: String
-    fullName: String
-    password: String
-    id: String
+    email: string
+    fullName: string
+    password: string
+    id: string
     listedApartments: Apartment[]
     savedApartments: Apartment[]
 

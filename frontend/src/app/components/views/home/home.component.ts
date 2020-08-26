@@ -12,6 +12,16 @@ import { User } from 'src/app/models/User';
 export class HomeComponent implements OnInit {
 
   user: User
+  
+  // routes
+  login = "/login";
+  createListing = "/create-listing";
+  home = "";
+  aboutUs = "";
+  postedApartments = "/posted-apartments";
+  savedApartments = "/saved-apartments";
+  allListings = "/all-listings";
+  register="/register";
 
   constructor(private router: Router, private userService: UserService) {
     this.user = userService.getUser()
@@ -21,6 +31,10 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  logout() {
+    console.log('logout')
   }
 
 }

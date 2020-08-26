@@ -16,7 +16,7 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("/assets/another.png");
+    /* background-image: url("/assets/another.png"); */
     position: absolute;
     top: 8%;
     bottom: 0;

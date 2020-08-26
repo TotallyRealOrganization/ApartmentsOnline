@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.List;
 
 @Service
 public class ApartmentService {
@@ -21,6 +22,11 @@ public class ApartmentService {
     @Transactional
     public Apartment getById(String apartmentId) {
         return apartmentDAO.getById(apartmentId);
+    }
+
+    @Transactional
+    public List<Apartment> getAllApartments() {
+        return apartmentDAO.getAllApartments();
     }
 
     @Transactional

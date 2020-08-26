@@ -36,6 +36,13 @@ public class ApartmentController {
         return new ResponseEntity<>(apartment, HttpStatus.OK);
     }
 
+    @GetMapping(path="/", produces = MediaType.APPLICATION_JSON_VALUE)
+    @ResponseBody
+    public ResponseEntity<List<Apartment>> getAllApartments() {
+        List<Apartment> allApartments = apartmentService.getAllApartments();
+        return new ResponseEntity<>(allApartments,HttpStatus.OK);
+    }
+
     // save apartment
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody

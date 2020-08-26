@@ -53,9 +53,18 @@ public class ApartmentControllerTest {
         Assert.assertTrue("Empty content",result.getResponse().getContentAsString().length()>0);
     }
 
+    @Test
+    public void getAllApartments() throws Exception {
+        MvcResult result = mockMvc.perform(get("/apartment/"))
+                .andDo(print())
+                .andExpect(status().isOk())
+                .andReturn();
+        Assert.assertNotNull(result);
+        Assert.assertTrue("Empty content",result.getResponse().getContentAsString().length()>0);
+    }
 
     @Test
-    public void saveNewApt() throws Exception {
+    public void saveAndRemoveNewApt() throws Exception {
         Apartment apartment = new Apartment();
         apartment.setId(UUID.fromString("9005fad9-6858-4065-a092-dfde1c5d5f6d"));
         apartment.setAddress("1 Test Controller Way");

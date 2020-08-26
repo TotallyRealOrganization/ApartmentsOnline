@@ -42,3 +42,5 @@ o
 ?src/main/java/com/apartmentsonline/SwaggerUI/SwaggerConfig.java,4\c\4ca736645d64bc2c01e64af27af1e04752571a0e
 O
 src/main/webapp/WEB-INF/web.xml,2\e\2e22b6edd746fa3dc40ad7276c87c8d87d72a392
+{
+Ksrc/test/java/com/apartmentsOnline/tests/Controller/UserControllerTest.java,0\5\058cb86f425fe1ec542f1923a3dfc6e4304abd05

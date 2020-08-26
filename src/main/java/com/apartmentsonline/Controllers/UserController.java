@@ -18,6 +18,10 @@ public class UserController {
 
     private UserService userService;
 
+    public UserService getUserService() {
+        return userService;
+    }
+
     @Autowired
     public UserController(UserService userService) {
         this.userService = userService;
@@ -36,7 +40,7 @@ public class UserController {
     public ResponseEntity<User> saveNewUser(@RequestBody User user) {
         boolean u = userService.saveNewUser(user);
         if (u)
-            return new ResponseEntity<>(user, HttpStatus.OK);
+            return new ResponseEntity<>(user, HttpStatus.CREATED);
         else  {
             return new ResponseEntity<>( HttpStatus.valueOf(401));
         }
@@ -47,7 +51,7 @@ public class UserController {
     @ResponseBody
     public ResponseEntity<User> userLogin(@RequestBody User user) {
         User use = userService.getUserByEmail(user.getEmail());
-        if (use != null)
+        if (use != null && use.getEmail().equals(user.getEmail()) && use.getPassword().equals(user.getPassword()))
             return new ResponseEntity<>(use, HttpStatus.OK);
         return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 

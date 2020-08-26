@@ -17,6 +17,18 @@ public class User {
     @Column(name = "pword")
     private String password;
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "email='" + email + '\'' +
+                ", fullName='" + fullName + '\'' +
+                ", password='" + password + '\'' +
+                ", id=" + id +
+                ", listedApartments=" + listedApartments +
+                ", savedApartments=" + savedApartments +
+                '}';
+    }
+
     @Id
     @Type(type = "pg-uuid")
     @Column(name = "user_id")

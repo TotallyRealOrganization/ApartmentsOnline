@@ -26,8 +26,6 @@ public class ApartmentDAOTest {
 
     @Autowired
     private ApartmentDAO test;
-
-
     private Apartment aptToBeAdded;
 
     @Before

@@ -23,7 +23,7 @@ public class TestConfig {
     private String url;
     @Value("postgres")
     private String username;
-    @Value("password")
+    @Value("pizzatruck")
     private String password;
     @Value("org.hibernate.dialect.PostgreSQL9Dialect")
     private String dialect;

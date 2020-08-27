@@ -1,4 +1,4 @@
-package com.apartmentsOnline.tests.DAO;
+package com.apartmentsOnline.tests.Controller;
 
 
 import com.apartmentsonline.Controllers.ApartmentController;
@@ -45,7 +45,7 @@ public class ApartmentControllerTest {
 
     @Test
     public void getById() throws Exception {
-        MvcResult result = mockMvc.perform(get("/apartment/a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"))
+        MvcResult result = mockMvc.perform(get("/apartment/e6b94742-0bb7-42ad-9a16-853a4d661e74"))
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andReturn();

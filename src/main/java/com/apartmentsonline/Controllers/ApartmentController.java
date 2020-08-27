@@ -29,7 +29,11 @@ public class ApartmentController {
         this.apartmentService = apartmentService;
     }
 
-    // get apartments by apartmentId
+    /***
+     * get apartment by id
+     * @param apartmendId - this is being extracted from the url
+     * @return it returns the apartment object and httpstatus.ok if successful, otherwise nothing is returned
+     */
     @GetMapping(path="/{apartmentId}", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
     public ResponseEntity<Apartment> getById(@PathVariable("apartmentId") String apartmendId) {
@@ -37,6 +41,10 @@ public class ApartmentController {
         return new ResponseEntity<>(apartment, HttpStatus.OK);
     }
 
+    /***
+     * get all apartments
+     * @return returns a list of apartments which is iterated through in the frontend
+     */
     @GetMapping(path="/", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
     public ResponseEntity<List<Apartment>> getAllApartments() {
@@ -44,7 +52,11 @@ public class ApartmentController {
         return new ResponseEntity<>(allApartments,HttpStatus.OK);
     }
 
-    // save apartment
+    /***
+     * save a new apartment
+     * @param apartment an apartment is sent in the request bodu in json format
+     * @return the apartment is sent back along with a 201 status, otherwise a client error of 401
+     */
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
     public ResponseEntity<Apartment> saveApartment(@RequestBody Apartment apartment) {

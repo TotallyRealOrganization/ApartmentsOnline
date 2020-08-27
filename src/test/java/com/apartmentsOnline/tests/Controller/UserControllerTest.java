@@ -97,4 +97,10 @@ public class UserControllerTest {
         Assert.assertNotNull(result);
         Assert.assertTrue("something's not right", result.getResponse().getStatus() == 200);
     }
+
+    @Test
+    public void test() {
+        User u = testController.getUserService().getUserById("37f3a96d-c112-4bae-837f-e8dab94c52a4");
+        System.out.println(u);
+    }
 }

@@ -1,8 +1,10 @@
 
+]
+java:S4684;"@Replace this persistent entity with a simple POJO or DTO object.(­óãË8ÙşÅÂ.
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(âŸ¤Ç
 Y
 java:S1128"7Remove this unused import 'javax.jws.soap.SOAPBinding'.(î¶âÑûÿÿÿÿ8‚ä±Â.
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(âŸ¤Ç
-]
-java:S4684("@Replace this persistent entity with a simple POJO or DTO object.(­óãË8ÙşÅÂ.
 b
-java:S46844"@Replace this persistent entity with a simple POJO or DTO object.(ôäÈ“ÿÿÿÿÿ8ÙşÅÂ.
+java:S4684L"@Replace this persistent entity with a simple POJO or DTO object.(ôäÈ“ÿÿÿÿÿ8ÙşÅÂ.
+]
+java:S4684["@Replace this persistent entity with a simple POJO or DTO object.(ó£…å8æìÁÇÂ.

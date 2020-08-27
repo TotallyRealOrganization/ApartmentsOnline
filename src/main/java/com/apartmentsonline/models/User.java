@@ -5,6 +5,10 @@ import org.hibernate.annotations.Type;
 import javax.persistence.*;
 import java.util.Set;
 import java.util.UUID;
+
+/***
+ * Models the User and their properties
+ */
 @Entity
 @Table(name = "users")
 public class User {

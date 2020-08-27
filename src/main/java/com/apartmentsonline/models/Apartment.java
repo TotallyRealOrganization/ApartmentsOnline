@@ -6,6 +6,9 @@ import javax.persistence.*;
 import java.util.UUID;
 @Entity
 @Table(name = "apartment")
+/***
+ * Models Apartments and their properties
+ */
 public class Apartment {
     @Id
     @Type(type = "pg-uuid")

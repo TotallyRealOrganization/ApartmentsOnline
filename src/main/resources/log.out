@@ -34,3 +34,490 @@
 2020-08-26 22:11:31,272: INFO - We in this Bitch
 2020-08-26 22:11:31,820: INFO - Closing org.springframework.web.context.support.GenericWebApplicationContext@48ae9b55: startup date [Wed Aug 26 22:10:08 EDT 2020]; root of context hierarchy
 2020-08-26 22:11:31,821: INFO - Stopping beans in phase 2147483647
+2020-08-27 11:40:57,459: INFO - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-08-27 11:40:57,483: INFO - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@102b3b1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1ea3742, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1952a2d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@159c4b8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1846619, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1ec1f0c]
+2020-08-27 11:40:57,492: INFO - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-08-27 11:40:57,492: INFO - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@c0a365, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1e3c938, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@183967b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@c273d3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1423665, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@398b7c]
+2020-08-27 11:40:57,500: INFO - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-08-27 11:40:57,500: INFO - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@ec5a4a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@12948e2, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1df90b0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1536d79, org.springframework.test.context.transaction.TransactionalTestExecutionListener@10143d3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@8e6209]
+2020-08-27 11:40:57,653: INFO - Loading XML bean definitions from class path resource [test-applicaion-context.xml]
+2020-08-27 11:40:58,016: INFO - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@d2fa64: startup date [Thu Aug 27 11:40:58 CDT 2020]; root of context hierarchy
+2020-08-27 11:40:58,476: INFO - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=testConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in com.apartmentsOnline.tests.DAO.TestConfig] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=ORMConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in com.apartmentsonline.models.ORMConfig]
+2020-08-27 11:40:58,476: INFO - Overriding bean definition for bean 'sessionFactoryBean' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=testConfig; factoryMethodName=sessionFactoryBean; initMethodName=null; destroyMethodName=(inferred); defined in com.apartmentsOnline.tests.DAO.TestConfig] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=ORMConfig; factoryMethodName=sessionFactoryBean; initMethodName=null; destroyMethodName=(inferred); defined in com.apartmentsonline.models.ORMConfig]
+2020-08-27 11:40:58,476: INFO - Overriding bean definition for bean 'hibernateTransactionManager' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=testConfig; factoryMethodName=hibernateTransactionManager; initMethodName=null; destroyMethodName=(inferred); defined in com.apartmentsOnline.tests.DAO.TestConfig] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=ORMConfig; factoryMethodName=hibernateTransactionManager; initMethodName=null; destroyMethodName=(inferred); defined in com.apartmentsonline.models.ORMConfig]
+2020-08-27 11:40:58,486: INFO - Overriding bean definition for bean 'mvcContentNegotiationManager' with a different definition: replacing [Root bean: class [org.springframework.web.accept.ContentNegotiationManagerFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration; factoryMethodName=mvcContentNegotiationManager; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]]
+2020-08-27 11:40:58,488: INFO - Skipping bean definition for [BeanMethod:name=mvcUriComponentsContributor,declaringClass=org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport]: a definition for bean 'mvcUriComponentsContributor' already exists. This top-level bean definition is considered as an override.
+2020-08-27 11:40:58,489: INFO - Overriding bean definition for bean 'mvcHandlerMappingIntrospector' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.handler.HandlerMappingIntrospector]; scope=; abstract=false; lazyInit=true; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [null]; scope=; abstract=false; lazyInit=true; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration; factoryMethodName=mvcHandlerMappingIntrospector; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]]
+2020-08-27 11:40:59,085: INFO - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2020-08-27 11:40:59,091: INFO - HHH000412: Hibernate Core {4.3.11.Final}
+2020-08-27 11:40:59,093: INFO - HHH000206: hibernate.properties not found
+2020-08-27 11:40:59,094: INFO - HHH000021: Bytecode provider name : javassist
+2020-08-27 11:41:00,619: WARN - HHH000342: Could not obtain connection to query metadata : Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
+2020-08-27 11:41:00,627: INFO - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2020-08-27 11:41:00,637: INFO - HHH000422: Disabling contextual LOB creation as connection was null
+2020-08-27 11:41:00,824: INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2020-08-27 11:41:00,829: INFO - HHH000397: Using ASTQueryTranslatorFactory
+2020-08-27 11:41:01,421: INFO - Mapped "{[/apartment],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.Apartment> com.apartmentsonline.Controllers.ApartmentController.saveApartment(com.apartmentsonline.models.Apartment)
+2020-08-27 11:41:01,422: INFO - Mapped "{[/apartment/],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.apartmentsonline.models.Apartment>> com.apartmentsonline.Controllers.ApartmentController.getAllApartments()
+2020-08-27 11:41:01,423: INFO - Mapped "{[/apartment/{apartmentId}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.Apartment> com.apartmentsonline.Controllers.ApartmentController.getById(java.lang.String)
+2020-08-27 11:41:01,426: INFO - Mapped "{[/user/register],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.saveNewUser(com.apartmentsonline.models.User)
+2020-08-27 11:41:01,426: INFO - Mapped "{[/user/updateUser],methods=[PUT],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.updateUser(com.apartmentsonline.models.User)
+2020-08-27 11:41:01,426: INFO - Mapped "{[/user/login],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.userLogin(com.apartmentsonline.models.User)
+2020-08-27 11:41:01,427: INFO - Mapped "{[/user/{userId}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.getUserById(java.lang.String)
+2020-08-27 11:41:01,448: INFO - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-08-27 11:41:01,448: INFO - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-08-27 11:41:01,449: INFO - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-08-27 11:41:01,977: INFO - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@d2fa64: startup date [Thu Aug 27 11:40:58 CDT 2020]; root of context hierarchy
+2020-08-27 11:41:02,040: INFO - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@d2fa64: startup date [Thu Aug 27 11:40:58 CDT 2020]; root of context hierarchy
+2020-08-27 11:41:02,288: INFO - Mapped "{[/apartment],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.Apartment> com.apartmentsonline.Controllers.ApartmentController.saveApartment(com.apartmentsonline.models.Apartment)
+2020-08-27 11:41:02,288: INFO - Mapped "{[/apartment/],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.apartmentsonline.models.Apartment>> com.apartmentsonline.Controllers.ApartmentController.getAllApartments()
+2020-08-27 11:41:02,288: INFO - Mapped "{[/apartment/{apartmentId}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.Apartment> com.apartmentsonline.Controllers.ApartmentController.getById(java.lang.String)
+2020-08-27 11:41:02,290: INFO - Mapped "{[/user/register],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.saveNewUser(com.apartmentsonline.models.User)
+2020-08-27 11:41:02,290: INFO - Mapped "{[/user/updateUser],methods=[PUT],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.updateUser(com.apartmentsonline.models.User)
+2020-08-27 11:41:02,290: INFO - Mapped "{[/user/login],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.userLogin(com.apartmentsonline.models.User)
+2020-08-27 11:41:02,291: INFO - Mapped "{[/user/{userId}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.getUserById(java.lang.String)
+2020-08-27 11:41:02,293: INFO - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-08-27 11:41:02,293: INFO - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-08-27 11:41:02,294: INFO - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-08-27 11:41:02,422: INFO - Using DataSource [org.apache.commons.dbcp.BasicDataSource@1d204a] of Hibernate SessionFactory for HibernateTransactionManager
+2020-08-27 11:41:02,465: INFO - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-08-27 11:41:02,485: INFO - Mapped URL path [/swagger-ui.html] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-08-27 11:41:02,485: INFO - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-08-27 11:41:02,496: INFO - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@d2fa64: startup date [Thu Aug 27 11:40:58 CDT 2020]; root of context hierarchy
+2020-08-27 11:41:02,584: INFO - Starting beans in phase 2147483647
+2020-08-27 11:41:02,916: INFO - Initializing Spring FrameworkServlet ''
+2020-08-27 11:41:02,916: INFO - FrameworkServlet '': initialization started
+2020-08-27 11:41:02,932: INFO - FrameworkServlet '': initialization completed in 16 ms
+2020-08-27 11:41:04,529: WARN - SQL Error: 0, SQLState: null
+2020-08-27 11:41:04,529: ERROR- Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
+2020-08-27 11:41:04,541: INFO - Initializing Spring FrameworkServlet ''
+2020-08-27 11:41:04,541: INFO - FrameworkServlet '': initialization started
+2020-08-27 11:41:04,543: INFO - FrameworkServlet '': initialization completed in 2 ms
+2020-08-27 11:41:05,132: WARN - SQL Error: 0, SQLState: null
+2020-08-27 11:41:05,132: ERROR- Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
+2020-08-27 11:41:05,134: INFO - Initializing Spring FrameworkServlet ''
+2020-08-27 11:41:05,134: INFO - FrameworkServlet '': initialization started
+2020-08-27 11:41:05,136: INFO - FrameworkServlet '': initialization completed in 2 ms
+2020-08-27 11:41:05,747: WARN - SQL Error: 0, SQLState: null
+2020-08-27 11:41:05,747: ERROR- Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
+2020-08-27 11:41:05,752: INFO - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@168800d: startup date [Thu Aug 27 11:41:05 CDT 2020]; root of context hierarchy
+2020-08-27 11:41:05,951: INFO - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=ORMConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apartmentsonline/models/ORMConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=testConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in com.apartmentsOnline.tests.DAO.TestConfig]
+2020-08-27 11:41:05,952: INFO - Overriding bean definition for bean 'sessionFactoryBean' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=ORMConfig; factoryMethodName=sessionFactoryBean; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apartmentsonline/models/ORMConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=testConfig; factoryMethodName=sessionFactoryBean; initMethodName=null; destroyMethodName=(inferred); defined in com.apartmentsOnline.tests.DAO.TestConfig]
+2020-08-27 11:41:05,952: INFO - Overriding bean definition for bean 'hibernateTransactionManager' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=ORMConfig; factoryMethodName=hibernateTransactionManager; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apartmentsonline/models/ORMConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=testConfig; factoryMethodName=hibernateTransactionManager; initMethodName=null; destroyMethodName=(inferred); defined in com.apartmentsOnline.tests.DAO.TestConfig]
+2020-08-27 11:41:06,486: WARN - HHH000342: Could not obtain connection to query metadata : Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
+2020-08-27 11:41:06,486: INFO - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2020-08-27 11:41:06,486: INFO - HHH000422: Disabling contextual LOB creation as connection was null
+2020-08-27 11:41:06,502: INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2020-08-27 11:41:06,502: INFO - HHH000397: Using ASTQueryTranslatorFactory
+2020-08-27 11:41:06,650: INFO - Mapped "{[/apartment],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.Apartment> com.apartmentsonline.Controllers.ApartmentController.saveApartment(com.apartmentsonline.models.Apartment)
+2020-08-27 11:41:06,650: INFO - Mapped "{[/apartment/],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.apartmentsonline.models.Apartment>> com.apartmentsonline.Controllers.ApartmentController.getAllApartments()
+2020-08-27 11:41:06,652: INFO - Mapped "{[/apartment/{apartmentId}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.Apartment> com.apartmentsonline.Controllers.ApartmentController.getById(java.lang.String)
+2020-08-27 11:41:06,653: INFO - Mapped "{[/user/register],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.saveNewUser(com.apartmentsonline.models.User)
+2020-08-27 11:41:06,654: INFO - Mapped "{[/user/updateUser],methods=[PUT],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.updateUser(com.apartmentsonline.models.User)
+2020-08-27 11:41:06,654: INFO - Mapped "{[/user/login],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.userLogin(com.apartmentsonline.models.User)
+2020-08-27 11:41:06,654: INFO - Mapped "{[/user/{userId}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.getUserById(java.lang.String)
+2020-08-27 11:41:06,656: INFO - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-08-27 11:41:06,656: INFO - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-08-27 11:41:06,657: INFO - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-08-27 11:41:06,712: INFO - Using DataSource [org.apache.commons.dbcp.BasicDataSource@3e8f1c] of Hibernate SessionFactory for HibernateTransactionManager
+2020-08-27 11:41:06,723: INFO - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-08-27 11:41:06,734: INFO - Mapped URL path [/swagger-ui.html] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-08-27 11:41:06,734: INFO - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-08-27 11:41:06,748: INFO - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@168800d: startup date [Thu Aug 27 11:41:05 CDT 2020]; root of context hierarchy
+2020-08-27 11:41:06,800: INFO - Starting beans in phase 2147483647
+2020-08-27 11:41:06,864: INFO - Initializing Spring FrameworkServlet ''
+2020-08-27 11:41:06,864: INFO - FrameworkServlet '': initialization started
+2020-08-27 11:41:06,870: INFO - FrameworkServlet '': initialization completed in 6 ms
+2020-08-27 11:41:07,360: WARN - SQL Error: 0, SQLState: null
+2020-08-27 11:41:07,360: ERROR- Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
+2020-08-27 11:41:07,363: INFO - Initializing Spring FrameworkServlet ''
+2020-08-27 11:41:07,363: INFO - FrameworkServlet '': initialization started
+2020-08-27 11:41:07,364: INFO - FrameworkServlet '': initialization completed in 1 ms
+2020-08-27 11:41:07,846: WARN - SQL Error: 0, SQLState: null
+2020-08-27 11:41:07,846: ERROR- Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
+2020-08-27 11:41:07,848: INFO - Initializing Spring FrameworkServlet ''
+2020-08-27 11:41:07,848: INFO - FrameworkServlet '': initialization started
+2020-08-27 11:41:07,850: INFO - FrameworkServlet '': initialization completed in 2 ms
+2020-08-27 11:41:08,314: WARN - SQL Error: 0, SQLState: null
+2020-08-27 11:41:08,314: ERROR- Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
+2020-08-27 11:41:08,316: INFO - Initializing Spring FrameworkServlet ''
+2020-08-27 11:41:08,316: INFO - FrameworkServlet '': initialization started
+2020-08-27 11:41:08,318: INFO - FrameworkServlet '': initialization completed in 2 ms
+2020-08-27 11:41:08,840: WARN - SQL Error: 0, SQLState: null
+2020-08-27 11:41:08,840: ERROR- Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
+2020-08-27 11:41:08,842: INFO - Initializing Spring FrameworkServlet ''
+2020-08-27 11:41:08,842: INFO - FrameworkServlet '': initialization started
+2020-08-27 11:41:08,843: INFO - FrameworkServlet '': initialization completed in 1 ms
+2020-08-27 11:41:09,403: WARN - SQL Error: 0, SQLState: null
+2020-08-27 11:41:09,403: ERROR- Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
+2020-08-27 11:41:09,404: WARN - Caught exception while allowing TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener@10143d3] to process 'before' execution of test method [public void com.apartmentsOnline.tests.DAO.ApartmentDAOTest.saveApartment_thenReturn()] for test instance [com.apartmentsOnline.tests.DAO.ApartmentDAOTest@136a715]
+org.springframework.transaction.CannotCreateTransactionException: Could not open Hibernate Session for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Could not open connection
+	at org.springframework.orm.hibernate4.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:544)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:377)
+	at org.springframework.test.context.transaction.TransactionContext.startTransaction(TransactionContext.java:102)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:200)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:269)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+Caused by: org.hibernate.exception.GenericJDBCException: Could not open connection
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:54)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:126)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:112)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:235)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.getConnection(LogicalConnectionImpl.java:171)
+	at org.hibernate.internal.SessionImpl.connection(SessionImpl.java:450)
+	at org.springframework.orm.hibernate4.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:450)
+	... 34 more
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139)
+	at org.hibernate.internal.AbstractSessionImpl$NonContextualJdbcConnectionAccess.obtainConnection(AbstractSessionImpl.java:380)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:228)
+	... 37 more
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:525)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:146)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:197)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:211)
+	at org.postgresql.Driver.makeConnection(Driver.java:459)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 42 more
+2020-08-27 11:41:09,980: WARN - SQL Error: 0, SQLState: null
+2020-08-27 11:41:09,980: ERROR- Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
+2020-08-27 11:41:10,523: WARN - SQL Error: 0, SQLState: null
+2020-08-27 11:41:10,523: ERROR- Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
+2020-08-27 11:41:10,526: INFO - Closing org.springframework.web.context.support.GenericWebApplicationContext@d2fa64: startup date [Thu Aug 27 11:40:58 CDT 2020]; root of context hierarchy
+2020-08-27 11:41:10,527: INFO - Closing org.springframework.web.context.support.GenericWebApplicationContext@168800d: startup date [Thu Aug 27 11:41:05 CDT 2020]; root of context hierarchy
+2020-08-27 11:41:10,529: INFO - Stopping beans in phase 2147483647
+2020-08-27 11:41:10,529: INFO - Stopping beans in phase 2147483647
+2020-08-27 11:41:46,941: INFO - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-08-27 11:41:46,965: INFO - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@102b3b1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1ea3742, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1952a2d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@159c4b8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1846619, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1ec1f0c]
+2020-08-27 11:41:46,973: INFO - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-08-27 11:41:46,973: INFO - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@c0a365, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1e3c938, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@183967b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@c273d3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1423665, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@398b7c]
+2020-08-27 11:41:46,981: INFO - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-08-27 11:41:46,982: INFO - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@ec5a4a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@12948e2, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1df90b0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1536d79, org.springframework.test.context.transaction.TransactionalTestExecutionListener@10143d3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@8e6209]
+2020-08-27 11:41:47,126: INFO - Loading XML bean definitions from class path resource [test-applicaion-context.xml]
+2020-08-27 11:41:47,466: INFO - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@d2fa64: startup date [Thu Aug 27 11:41:47 CDT 2020]; root of context hierarchy
+2020-08-27 11:41:47,908: INFO - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=testConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in com.apartmentsOnline.tests.DAO.TestConfig] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=ORMConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in com.apartmentsonline.models.ORMConfig]
+2020-08-27 11:41:47,909: INFO - Overriding bean definition for bean 'sessionFactoryBean' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=testConfig; factoryMethodName=sessionFactoryBean; initMethodName=null; destroyMethodName=(inferred); defined in com.apartmentsOnline.tests.DAO.TestConfig] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=ORMConfig; factoryMethodName=sessionFactoryBean; initMethodName=null; destroyMethodName=(inferred); defined in com.apartmentsonline.models.ORMConfig]
+2020-08-27 11:41:47,909: INFO - Overriding bean definition for bean 'hibernateTransactionManager' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=testConfig; factoryMethodName=hibernateTransactionManager; initMethodName=null; destroyMethodName=(inferred); defined in com.apartmentsOnline.tests.DAO.TestConfig] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=ORMConfig; factoryMethodName=hibernateTransactionManager; initMethodName=null; destroyMethodName=(inferred); defined in com.apartmentsonline.models.ORMConfig]
+2020-08-27 11:41:47,919: INFO - Overriding bean definition for bean 'mvcContentNegotiationManager' with a different definition: replacing [Root bean: class [org.springframework.web.accept.ContentNegotiationManagerFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration; factoryMethodName=mvcContentNegotiationManager; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]]
+2020-08-27 11:41:47,919: INFO - Skipping bean definition for [BeanMethod:name=mvcUriComponentsContributor,declaringClass=org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport]: a definition for bean 'mvcUriComponentsContributor' already exists. This top-level bean definition is considered as an override.
+2020-08-27 11:41:47,919: INFO - Overriding bean definition for bean 'mvcHandlerMappingIntrospector' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.handler.HandlerMappingIntrospector]; scope=; abstract=false; lazyInit=true; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [null]; scope=; abstract=false; lazyInit=true; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration; factoryMethodName=mvcHandlerMappingIntrospector; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]]
+2020-08-27 11:41:48,539: INFO - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2020-08-27 11:41:48,545: INFO - HHH000412: Hibernate Core {4.3.11.Final}
+2020-08-27 11:41:48,547: INFO - HHH000206: hibernate.properties not found
+2020-08-27 11:41:48,548: INFO - HHH000021: Bytecode provider name : javassist
+2020-08-27 11:41:50,205: WARN - HHH000342: Could not obtain connection to query metadata : Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
+2020-08-27 11:41:50,214: INFO - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2020-08-27 11:41:50,223: INFO - HHH000422: Disabling contextual LOB creation as connection was null
+2020-08-27 11:41:50,411: INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2020-08-27 11:41:50,416: INFO - HHH000397: Using ASTQueryTranslatorFactory
+2020-08-27 11:41:51,054: INFO - Mapped "{[/apartment/],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.apartmentsonline.models.Apartment>> com.apartmentsonline.Controllers.ApartmentController.getAllApartments()
+2020-08-27 11:41:51,055: INFO - Mapped "{[/apartment],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.Apartment> com.apartmentsonline.Controllers.ApartmentController.saveApartment(com.apartmentsonline.models.Apartment)
+2020-08-27 11:41:51,056: INFO - Mapped "{[/apartment/{apartmentId}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.Apartment> com.apartmentsonline.Controllers.ApartmentController.getById(java.lang.String)
+2020-08-27 11:41:51,058: INFO - Mapped "{[/user/updateUser],methods=[PUT],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.updateUser(com.apartmentsonline.models.User)
+2020-08-27 11:41:51,059: INFO - Mapped "{[/user/{userId}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.getUserById(java.lang.String)
+2020-08-27 11:41:51,059: INFO - Mapped "{[/user/register],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.saveNewUser(com.apartmentsonline.models.User)
+2020-08-27 11:41:51,059: INFO - Mapped "{[/user/login],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.userLogin(com.apartmentsonline.models.User)
+2020-08-27 11:41:51,069: INFO - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-08-27 11:41:51,069: INFO - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-08-27 11:41:51,070: INFO - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-08-27 11:41:51,545: INFO - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@d2fa64: startup date [Thu Aug 27 11:41:47 CDT 2020]; root of context hierarchy
+2020-08-27 11:41:51,602: INFO - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@d2fa64: startup date [Thu Aug 27 11:41:47 CDT 2020]; root of context hierarchy
+2020-08-27 11:41:51,846: INFO - Mapped "{[/apartment/],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.apartmentsonline.models.Apartment>> com.apartmentsonline.Controllers.ApartmentController.getAllApartments()
+2020-08-27 11:41:51,846: INFO - Mapped "{[/apartment],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.Apartment> com.apartmentsonline.Controllers.ApartmentController.saveApartment(com.apartmentsonline.models.Apartment)
+2020-08-27 11:41:51,847: INFO - Mapped "{[/apartment/{apartmentId}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.Apartment> com.apartmentsonline.Controllers.ApartmentController.getById(java.lang.String)
+2020-08-27 11:41:51,848: INFO - Mapped "{[/user/updateUser],methods=[PUT],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.updateUser(com.apartmentsonline.models.User)
+2020-08-27 11:41:51,849: INFO - Mapped "{[/user/{userId}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.getUserById(java.lang.String)
+2020-08-27 11:41:51,849: INFO - Mapped "{[/user/register],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.saveNewUser(com.apartmentsonline.models.User)
+2020-08-27 11:41:51,849: INFO - Mapped "{[/user/login],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.userLogin(com.apartmentsonline.models.User)
+2020-08-27 11:41:51,852: INFO - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-08-27 11:41:51,852: INFO - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-08-27 11:41:51,852: INFO - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-08-27 11:41:51,984: INFO - Using DataSource [org.apache.commons.dbcp.BasicDataSource@1d204a] of Hibernate SessionFactory for HibernateTransactionManager
+2020-08-27 11:41:52,022: INFO - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-08-27 11:41:52,042: INFO - Mapped URL path [/swagger-ui.html] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-08-27 11:41:52,043: INFO - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-08-27 11:41:52,059: INFO - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@d2fa64: startup date [Thu Aug 27 11:41:47 CDT 2020]; root of context hierarchy
+2020-08-27 11:41:52,139: INFO - Starting beans in phase 2147483647
+2020-08-27 11:41:52,470: INFO - Initializing Spring FrameworkServlet ''
+2020-08-27 11:41:52,470: INFO - FrameworkServlet '': initialization started
+2020-08-27 11:41:52,484: INFO - FrameworkServlet '': initialization completed in 14 ms
+2020-08-27 11:41:53,024: WARN - SQL Error: 0, SQLState: null
+2020-08-27 11:41:53,024: ERROR- Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
+2020-08-27 11:41:53,037: INFO - Initializing Spring FrameworkServlet ''
+2020-08-27 11:41:53,037: INFO - FrameworkServlet '': initialization started
+2020-08-27 11:41:53,039: INFO - FrameworkServlet '': initialization completed in 2 ms
+2020-08-27 11:41:53,602: WARN - SQL Error: 0, SQLState: null
+2020-08-27 11:41:53,602: ERROR- Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
+2020-08-27 11:41:53,605: INFO - Initializing Spring FrameworkServlet ''
+2020-08-27 11:41:53,605: INFO - FrameworkServlet '': initialization started
+2020-08-27 11:41:53,608: INFO - FrameworkServlet '': initialization completed in 3 ms
+2020-08-27 11:41:54,053: WARN - SQL Error: 0, SQLState: null
+2020-08-27 11:41:54,054: ERROR- Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
+2020-08-27 11:41:54,059: INFO - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@168800d: startup date [Thu Aug 27 11:41:54 CDT 2020]; root of context hierarchy
+2020-08-27 11:41:54,335: INFO - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=ORMConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apartmentsonline/models/ORMConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=testConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in com.apartmentsOnline.tests.DAO.TestConfig]
+2020-08-27 11:41:54,335: INFO - Overriding bean definition for bean 'sessionFactoryBean' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=ORMConfig; factoryMethodName=sessionFactoryBean; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apartmentsonline/models/ORMConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=testConfig; factoryMethodName=sessionFactoryBean; initMethodName=null; destroyMethodName=(inferred); defined in com.apartmentsOnline.tests.DAO.TestConfig]
+2020-08-27 11:41:54,336: INFO - Overriding bean definition for bean 'hibernateTransactionManager' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=ORMConfig; factoryMethodName=hibernateTransactionManager; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apartmentsonline/models/ORMConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=testConfig; factoryMethodName=hibernateTransactionManager; initMethodName=null; destroyMethodName=(inferred); defined in com.apartmentsOnline.tests.DAO.TestConfig]
+2020-08-27 11:41:54,856: WARN - HHH000342: Could not obtain connection to query metadata : Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
+2020-08-27 11:41:54,856: INFO - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2020-08-27 11:41:54,856: INFO - HHH000422: Disabling contextual LOB creation as connection was null
+2020-08-27 11:41:54,863: INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2020-08-27 11:41:54,863: INFO - HHH000397: Using ASTQueryTranslatorFactory
+2020-08-27 11:41:55,001: INFO - Mapped "{[/apartment/],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.apartmentsonline.models.Apartment>> com.apartmentsonline.Controllers.ApartmentController.getAllApartments()
+2020-08-27 11:41:55,002: INFO - Mapped "{[/apartment],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.Apartment> com.apartmentsonline.Controllers.ApartmentController.saveApartment(com.apartmentsonline.models.Apartment)
+2020-08-27 11:41:55,003: INFO - Mapped "{[/apartment/{apartmentId}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.Apartment> com.apartmentsonline.Controllers.ApartmentController.getById(java.lang.String)
+2020-08-27 11:41:55,005: INFO - Mapped "{[/user/updateUser],methods=[PUT],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.updateUser(com.apartmentsonline.models.User)
+2020-08-27 11:41:55,005: INFO - Mapped "{[/user/{userId}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.getUserById(java.lang.String)
+2020-08-27 11:41:55,005: INFO - Mapped "{[/user/register],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.saveNewUser(com.apartmentsonline.models.User)
+2020-08-27 11:41:55,005: INFO - Mapped "{[/user/login],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.userLogin(com.apartmentsonline.models.User)
+2020-08-27 11:41:55,008: INFO - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-08-27 11:41:55,008: INFO - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-08-27 11:41:55,008: INFO - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-08-27 11:41:55,054: INFO - Using DataSource [org.apache.commons.dbcp.BasicDataSource@3e8f1c] of Hibernate SessionFactory for HibernateTransactionManager
+2020-08-27 11:41:55,073: INFO - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-08-27 11:41:55,085: INFO - Mapped URL path [/swagger-ui.html] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-08-27 11:41:55,085: INFO - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-08-27 11:41:55,097: INFO - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@168800d: startup date [Thu Aug 27 11:41:54 CDT 2020]; root of context hierarchy
+2020-08-27 11:41:55,138: INFO - Starting beans in phase 2147483647
+2020-08-27 11:41:55,191: INFO - Initializing Spring FrameworkServlet ''
+2020-08-27 11:41:55,191: INFO - FrameworkServlet '': initialization started
+2020-08-27 11:41:55,196: INFO - FrameworkServlet '': initialization completed in 5 ms
+2020-08-27 11:41:55,637: WARN - SQL Error: 0, SQLState: null
+2020-08-27 11:41:55,637: ERROR- Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
+2020-08-27 11:41:55,640: INFO - Initializing Spring FrameworkServlet ''
+2020-08-27 11:41:55,640: INFO - FrameworkServlet '': initialization started
+2020-08-27 11:41:55,642: INFO - FrameworkServlet '': initialization completed in 2 ms
+2020-08-27 11:41:56,085: WARN - SQL Error: 0, SQLState: null
+2020-08-27 11:41:56,085: ERROR- Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
+2020-08-27 11:41:56,087: INFO - Initializing Spring FrameworkServlet ''
+2020-08-27 11:41:56,087: INFO - FrameworkServlet '': initialization started
+2020-08-27 11:41:56,088: INFO - FrameworkServlet '': initialization completed in 1 ms
+2020-08-27 11:41:56,542: WARN - SQL Error: 0, SQLState: null
+2020-08-27 11:41:56,542: ERROR- Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
+2020-08-27 11:41:56,545: INFO - Initializing Spring FrameworkServlet ''
+2020-08-27 11:41:56,545: INFO - FrameworkServlet '': initialization started
+2020-08-27 11:41:56,546: INFO - FrameworkServlet '': initialization completed in 1 ms
+2020-08-27 11:41:57,061: WARN - SQL Error: 0, SQLState: null
+2020-08-27 11:41:57,061: ERROR- Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
+2020-08-27 11:41:57,063: INFO - Initializing Spring FrameworkServlet ''
+2020-08-27 11:41:57,063: INFO - FrameworkServlet '': initialization started
+2020-08-27 11:41:57,065: INFO - FrameworkServlet '': initialization completed in 1 ms
+2020-08-27 11:41:58,621: WARN - SQL Error: 0, SQLState: null
+2020-08-27 11:41:58,621: ERROR- Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
+2020-08-27 11:41:58,622: WARN - Caught exception while allowing TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener@10143d3] to process 'before' execution of test method [public void com.apartmentsOnline.tests.DAO.ApartmentDAOTest.saveApartment_thenReturn()] for test instance [com.apartmentsOnline.tests.DAO.ApartmentDAOTest@136a715]
+org.springframework.transaction.CannotCreateTransactionException: Could not open Hibernate Session for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Could not open connection
+	at org.springframework.orm.hibernate4.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:544)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:377)
+	at org.springframework.test.context.transaction.TransactionContext.startTransaction(TransactionContext.java:102)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:200)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:269)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+Caused by: org.hibernate.exception.GenericJDBCException: Could not open connection
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:54)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:126)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:112)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:235)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.getConnection(LogicalConnectionImpl.java:171)
+	at org.hibernate.internal.SessionImpl.connection(SessionImpl.java:450)
+	at org.springframework.orm.hibernate4.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:450)
+	... 34 more
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139)
+	at org.hibernate.internal.AbstractSessionImpl$NonContextualJdbcConnectionAccess.obtainConnection(AbstractSessionImpl.java:380)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:228)
+	... 37 more
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:525)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:146)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:197)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:211)
+	at org.postgresql.Driver.makeConnection(Driver.java:459)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 42 more
+2020-08-27 11:41:59,077: WARN - SQL Error: 0, SQLState: null
+2020-08-27 11:41:59,077: ERROR- Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
+2020-08-27 11:41:59,575: WARN - SQL Error: 0, SQLState: null
+2020-08-27 11:41:59,575: ERROR- Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
+2020-08-27 11:41:59,578: INFO - Closing org.springframework.web.context.support.GenericWebApplicationContext@d2fa64: startup date [Thu Aug 27 11:41:47 CDT 2020]; root of context hierarchy
+2020-08-27 11:41:59,578: INFO - Closing org.springframework.web.context.support.GenericWebApplicationContext@168800d: startup date [Thu Aug 27 11:41:54 CDT 2020]; root of context hierarchy
+2020-08-27 11:41:59,580: INFO - Stopping beans in phase 2147483647
+2020-08-27 11:41:59,580: INFO - Stopping beans in phase 2147483647
+2020-08-27 12:00:24,054: INFO - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-08-27 12:00:24,076: INFO - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@102b3b1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1ea3742, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1952a2d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@159c4b8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1846619, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1ec1f0c]
+2020-08-27 12:00:24,084: INFO - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-08-27 12:00:24,085: INFO - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@c0a365, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1e3c938, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@183967b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@c273d3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1423665, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@398b7c]
+2020-08-27 12:00:24,092: INFO - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-08-27 12:00:24,092: INFO - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@ec5a4a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@12948e2, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1df90b0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1536d79, org.springframework.test.context.transaction.TransactionalTestExecutionListener@10143d3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@8e6209]
+2020-08-27 12:00:24,227: INFO - Loading XML bean definitions from class path resource [test-applicaion-context.xml]
+2020-08-27 12:00:24,541: INFO - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@d2fa64: startup date [Thu Aug 27 12:00:24 CDT 2020]; root of context hierarchy
+2020-08-27 12:00:24,950: INFO - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=testConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in com.apartmentsOnline.tests.DAO.TestConfig] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=ORMConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in com.apartmentsonline.models.ORMConfig]
+2020-08-27 12:00:24,951: INFO - Overriding bean definition for bean 'sessionFactoryBean' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=testConfig; factoryMethodName=sessionFactoryBean; initMethodName=null; destroyMethodName=(inferred); defined in com.apartmentsOnline.tests.DAO.TestConfig] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=ORMConfig; factoryMethodName=sessionFactoryBean; initMethodName=null; destroyMethodName=(inferred); defined in com.apartmentsonline.models.ORMConfig]
+2020-08-27 12:00:24,951: INFO - Overriding bean definition for bean 'hibernateTransactionManager' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=testConfig; factoryMethodName=hibernateTransactionManager; initMethodName=null; destroyMethodName=(inferred); defined in com.apartmentsOnline.tests.DAO.TestConfig] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=ORMConfig; factoryMethodName=hibernateTransactionManager; initMethodName=null; destroyMethodName=(inferred); defined in com.apartmentsonline.models.ORMConfig]
+2020-08-27 12:00:24,959: INFO - Overriding bean definition for bean 'mvcContentNegotiationManager' with a different definition: replacing [Root bean: class [org.springframework.web.accept.ContentNegotiationManagerFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration; factoryMethodName=mvcContentNegotiationManager; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]]
+2020-08-27 12:00:24,960: INFO - Skipping bean definition for [BeanMethod:name=mvcUriComponentsContributor,declaringClass=org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport]: a definition for bean 'mvcUriComponentsContributor' already exists. This top-level bean definition is considered as an override.
+2020-08-27 12:00:24,960: INFO - Overriding bean definition for bean 'mvcHandlerMappingIntrospector' with a different definition: replacing [Root bean: class [org.springframework.web.servlet.handler.HandlerMappingIntrospector]; scope=; abstract=false; lazyInit=true; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [null]; scope=; abstract=false; lazyInit=true; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration; factoryMethodName=mvcHandlerMappingIntrospector; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]]
+2020-08-27 12:00:25,522: INFO - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2020-08-27 12:00:25,530: INFO - HHH000412: Hibernate Core {4.3.11.Final}
+2020-08-27 12:00:25,532: INFO - HHH000206: hibernate.properties not found
+2020-08-27 12:00:25,533: INFO - HHH000021: Bytecode provider name : javassist
+2020-08-27 12:00:28,029: INFO - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2020-08-27 12:00:28,042: INFO - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2020-08-27 12:00:28,219: INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2020-08-27 12:00:28,224: INFO - HHH000397: Using ASTQueryTranslatorFactory
+2020-08-27 12:00:28,787: INFO - Mapped "{[/apartment/],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.apartmentsonline.models.Apartment>> com.apartmentsonline.Controllers.ApartmentController.getAllApartments()
+2020-08-27 12:00:28,789: INFO - Mapped "{[/apartment],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.Apartment> com.apartmentsonline.Controllers.ApartmentController.saveApartment(com.apartmentsonline.models.Apartment)
+2020-08-27 12:00:28,789: INFO - Mapped "{[/apartment/{apartmentId}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.Apartment> com.apartmentsonline.Controllers.ApartmentController.getById(java.lang.String)
+2020-08-27 12:00:28,792: INFO - Mapped "{[/user/login],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.userLogin(com.apartmentsonline.models.User)
+2020-08-27 12:00:28,792: INFO - Mapped "{[/user/register],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.saveNewUser(com.apartmentsonline.models.User)
+2020-08-27 12:00:28,792: INFO - Mapped "{[/user/updateUser],methods=[PUT],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.updateUser(com.apartmentsonline.models.User)
+2020-08-27 12:00:28,793: INFO - Mapped "{[/user/{userId}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.getUserById(java.lang.String)
+2020-08-27 12:00:28,802: INFO - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-08-27 12:00:28,803: INFO - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-08-27 12:00:28,804: INFO - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-08-27 12:00:29,312: INFO - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@d2fa64: startup date [Thu Aug 27 12:00:24 CDT 2020]; root of context hierarchy
+2020-08-27 12:00:29,367: INFO - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@d2fa64: startup date [Thu Aug 27 12:00:24 CDT 2020]; root of context hierarchy
+2020-08-27 12:00:29,599: INFO - Mapped "{[/apartment/],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.apartmentsonline.models.Apartment>> com.apartmentsonline.Controllers.ApartmentController.getAllApartments()
+2020-08-27 12:00:29,600: INFO - Mapped "{[/apartment],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.Apartment> com.apartmentsonline.Controllers.ApartmentController.saveApartment(com.apartmentsonline.models.Apartment)
+2020-08-27 12:00:29,600: INFO - Mapped "{[/apartment/{apartmentId}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.Apartment> com.apartmentsonline.Controllers.ApartmentController.getById(java.lang.String)
+2020-08-27 12:00:29,602: INFO - Mapped "{[/user/login],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.userLogin(com.apartmentsonline.models.User)
+2020-08-27 12:00:29,602: INFO - Mapped "{[/user/register],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.saveNewUser(com.apartmentsonline.models.User)
+2020-08-27 12:00:29,602: INFO - Mapped "{[/user/updateUser],methods=[PUT],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.updateUser(com.apartmentsonline.models.User)
+2020-08-27 12:00:29,603: INFO - Mapped "{[/user/{userId}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.getUserById(java.lang.String)
+2020-08-27 12:00:29,605: INFO - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-08-27 12:00:29,605: INFO - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-08-27 12:00:29,605: INFO - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-08-27 12:00:29,725: INFO - Using DataSource [org.apache.commons.dbcp.BasicDataSource@1d204a] of Hibernate SessionFactory for HibernateTransactionManager
+2020-08-27 12:00:29,762: INFO - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-08-27 12:00:29,786: INFO - Mapped URL path [/swagger-ui.html] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-08-27 12:00:29,786: INFO - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-08-27 12:00:29,797: INFO - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@d2fa64: startup date [Thu Aug 27 12:00:24 CDT 2020]; root of context hierarchy
+2020-08-27 12:00:29,874: INFO - Starting beans in phase 2147483647
+2020-08-27 12:00:30,191: INFO - Initializing Spring FrameworkServlet ''
+2020-08-27 12:00:30,191: INFO - FrameworkServlet '': initialization started
+2020-08-27 12:00:30,205: INFO - FrameworkServlet '': initialization completed in 14 ms
+2020-08-27 12:00:30,731: INFO - Initializing Spring FrameworkServlet ''
+2020-08-27 12:00:30,731: INFO - FrameworkServlet '': initialization started
+2020-08-27 12:00:30,733: INFO - FrameworkServlet '': initialization completed in 2 ms
+2020-08-27 12:00:31,376: INFO - Initializing Spring FrameworkServlet ''
+2020-08-27 12:00:31,376: INFO - FrameworkServlet '': initialization started
+2020-08-27 12:00:31,378: INFO - FrameworkServlet '': initialization completed in 2 ms
+2020-08-27 12:00:31,516: INFO - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1218c74: startup date [Thu Aug 27 12:00:31 CDT 2020]; root of context hierarchy
+2020-08-27 12:00:31,701: INFO - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=ORMConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apartmentsonline/models/ORMConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=testConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in com.apartmentsOnline.tests.DAO.TestConfig]
+2020-08-27 12:00:31,701: INFO - Overriding bean definition for bean 'sessionFactoryBean' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=ORMConfig; factoryMethodName=sessionFactoryBean; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apartmentsonline/models/ORMConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=testConfig; factoryMethodName=sessionFactoryBean; initMethodName=null; destroyMethodName=(inferred); defined in com.apartmentsOnline.tests.DAO.TestConfig]
+2020-08-27 12:00:31,702: INFO - Overriding bean definition for bean 'hibernateTransactionManager' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=ORMConfig; factoryMethodName=hibernateTransactionManager; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apartmentsonline/models/ORMConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=testConfig; factoryMethodName=hibernateTransactionManager; initMethodName=null; destroyMethodName=(inferred); defined in com.apartmentsOnline.tests.DAO.TestConfig]
+2020-08-27 12:00:33,134: INFO - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2020-08-27 12:00:33,134: INFO - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2020-08-27 12:00:33,141: INFO - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2020-08-27 12:00:33,141: INFO - HHH000397: Using ASTQueryTranslatorFactory
+2020-08-27 12:00:33,285: INFO - Mapped "{[/apartment/],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.apartmentsonline.models.Apartment>> com.apartmentsonline.Controllers.ApartmentController.getAllApartments()
+2020-08-27 12:00:33,285: INFO - Mapped "{[/apartment],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.Apartment> com.apartmentsonline.Controllers.ApartmentController.saveApartment(com.apartmentsonline.models.Apartment)
+2020-08-27 12:00:33,287: INFO - Mapped "{[/apartment/{apartmentId}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.Apartment> com.apartmentsonline.Controllers.ApartmentController.getById(java.lang.String)
+2020-08-27 12:00:33,288: INFO - Mapped "{[/user/login],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.userLogin(com.apartmentsonline.models.User)
+2020-08-27 12:00:33,289: INFO - Mapped "{[/user/register],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.saveNewUser(com.apartmentsonline.models.User)
+2020-08-27 12:00:33,289: INFO - Mapped "{[/user/updateUser],methods=[PUT],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.updateUser(com.apartmentsonline.models.User)
+2020-08-27 12:00:33,289: INFO - Mapped "{[/user/{userId}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.apartmentsonline.models.User> com.apartmentsonline.Controllers.UserController.getUserById(java.lang.String)
+2020-08-27 12:00:33,292: INFO - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-08-27 12:00:33,292: INFO - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-08-27 12:00:33,293: INFO - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-08-27 12:00:33,336: INFO - Using DataSource [org.apache.commons.dbcp.BasicDataSource@1053f81] of Hibernate SessionFactory for HibernateTransactionManager
+2020-08-27 12:00:33,347: INFO - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-08-27 12:00:33,357: INFO - Mapped URL path [/swagger-ui.html] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-08-27 12:00:33,357: INFO - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-08-27 12:00:33,368: INFO - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1218c74: startup date [Thu Aug 27 12:00:31 CDT 2020]; root of context hierarchy
+2020-08-27 12:00:33,412: INFO - Starting beans in phase 2147483647
+2020-08-27 12:00:33,463: INFO - Initializing Spring FrameworkServlet ''
+2020-08-27 12:00:33,463: INFO - FrameworkServlet '': initialization started
+2020-08-27 12:00:33,467: INFO - FrameworkServlet '': initialization completed in 4 ms
+2020-08-27 12:00:34,150: INFO - Initializing Spring FrameworkServlet ''
+2020-08-27 12:00:34,150: INFO - FrameworkServlet '': initialization started
+2020-08-27 12:00:34,151: INFO - FrameworkServlet '': initialization completed in 1 ms
+2020-08-27 12:00:34,581: INFO - Initializing Spring FrameworkServlet ''
+2020-08-27 12:00:34,581: INFO - FrameworkServlet '': initialization started
+2020-08-27 12:00:34,583: INFO - FrameworkServlet '': initialization completed in 2 ms
+2020-08-27 12:00:35,752: INFO - Initializing Spring FrameworkServlet ''
+2020-08-27 12:00:35,752: INFO - FrameworkServlet '': initialization started
+2020-08-27 12:00:35,754: INFO - FrameworkServlet '': initialization completed in 2 ms
+2020-08-27 12:00:35,821: INFO - We in this Bitch
+2020-08-27 12:00:35,970: INFO - Initializing Spring FrameworkServlet ''
+2020-08-27 12:00:35,970: INFO - FrameworkServlet '': initialization started
+2020-08-27 12:00:35,972: INFO - FrameworkServlet '': initialization completed in 2 ms
+2020-08-27 12:00:35,986: INFO - Began transaction (1) for test context [DefaultTestContext@1554b6b testClass = ApartmentDAOTest, testInstance = com.apartmentsOnline.tests.DAO.ApartmentDAOTest@1f234c, testMethod = saveApartment_thenReturn@ApartmentDAOTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@176099a testClass = ApartmentDAOTest, locations = '{}', classes = '{class com.apartmentsOnline.tests.DAO.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@17fbf62]; rollback [true]
+2020-08-27 12:00:36,128: INFO - Rolled back transaction for test: [DefaultTestContext@1554b6b testClass = ApartmentDAOTest, testInstance = com.apartmentsOnline.tests.DAO.ApartmentDAOTest@1f234c, testMethod = saveApartment_thenReturn@ApartmentDAOTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@176099a testClass = ApartmentDAOTest, locations = '{}', classes = '{class com.apartmentsOnline.tests.DAO.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
+2020-08-27 12:00:36,580: INFO - Closing org.springframework.web.context.support.GenericWebApplicationContext@1218c74: startup date [Thu Aug 27 12:00:31 CDT 2020]; root of context hierarchy
+2020-08-27 12:00:36,581: INFO - Closing org.springframework.web.context.support.GenericWebApplicationContext@d2fa64: startup date [Thu Aug 27 12:00:24 CDT 2020]; root of context hierarchy
+2020-08-27 12:00:36,583: INFO - Stopping beans in phase 2147483647
+2020-08-27 12:00:36,583: INFO - Stopping beans in phase 2147483647

@@ -1,0 +1,10 @@
+.outer {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    max-height: 88vh;
+}
+.list-container {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}

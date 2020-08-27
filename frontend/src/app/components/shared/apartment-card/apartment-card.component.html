@@ -1,15 +1,14 @@
-<mat-card class="example-card">
+<mat-card class="ap-card" *ngIf="apartment">
     <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>Roaring Heights</mat-card-title>
-    <mat-card-subtitle>Austin, TX</mat-card-subtitle>
+        <mat-card-title>{{apartment.address}}</mat-card-title>
+        <mat-card-subtitle>Austin, TX</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image src="/assets/apartments2.jpg" alt="apartments">
+
+    <img mat-card-image [src]="apartment.imgURL" alt="apartment-image">
+    
     <mat-card-content>
-    <p>
-        The amenities here are second to none!
-    </p>
     </mat-card-content>
+    
     <mat-card-actions>
     <button mat-button>LIKE</button>
     <button mat-button>SHARE</button>

@@ -1,1 +1,8 @@
-<p>apartments-list works!</p>
+<div class="outer">
+<div class="list-container">
+    <mat-grid-list cols="" rowHeight="300px">
+        <mat-grid-tile *ngFor="let apartment of apartments">
+            <app-apartment-card [apartment]="apartment"></app-apartment-card>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>

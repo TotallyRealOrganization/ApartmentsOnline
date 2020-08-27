@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-
+import { Router } from '@angular/router';
 import { Apartment } from '../../../models/Apartment'
 import { ApartmentService } from '../../../services/apartment.service'
 import { CookieService } from 'ngx-cookie-service';
@@ -14,7 +14,7 @@ export class CreateListingComponent implements OnInit {
 
   aptForm: FormGroup
   
-  constructor(private apartmentService: ApartmentService, private cookieService: CookieService) { }
+  constructor(private apartmentService: ApartmentService, private router: Router, private cookieService: CookieService) { }
   
   ngOnInit(): void {
     this.aptForm = new FormGroup({
@@ -42,7 +42,7 @@ export class CreateListingComponent implements OnInit {
 
     const apartment: Apartment = new Apartment(id,beds,baths,a,area,img,price,util,restr)
     this.apartmentService.postApartment(apartment).subscribe(e => {
-      console.log(e)
+      this.router.navigate(['/home'])
     })
   }
 

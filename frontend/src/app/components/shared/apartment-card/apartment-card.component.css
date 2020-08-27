@@ -1,15 +1,4 @@
-.spacedPart {
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50em;
+.ap-card {
+  max-width: 80vw;
+  height: 175px;
 }
-
-.example-card {
-    max-width: 400px;
-  }
-  
-  .example-header-image {
-    background-image: url('/assets/nounApartments.png');
-    background-size: cover;
-  }

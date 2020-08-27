@@ -46,6 +46,7 @@ export class UserService {
   fetchUser(userID: string): Observable<User> {
     let usr = this.http.get<User>(`${apiUrl}/user/${userID}`).pipe(share())
     usr.subscribe(e => {
+      console.log(e)
       this.user = e
       this.loggedIn.next(true)
     })

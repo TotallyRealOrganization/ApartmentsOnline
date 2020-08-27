@@ -7,6 +7,10 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.util.UUID;
+
+/***
+ * Models the Amenities and their properties
+ */
 @Entity
 @Table(name = "amenities")
 public class Amenities {

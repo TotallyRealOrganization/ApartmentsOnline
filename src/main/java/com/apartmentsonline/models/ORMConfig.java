@@ -12,6 +12,10 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import javax.sql.DataSource;
 import java.util.Properties;
 
+/***
+ * creates a configuration Bean for Spring
+ * Configures hibernate
+ */
 @Configuration
 @EnableTransactionManagement
 public class ORMConfig {
@@ -26,6 +30,10 @@ public class ORMConfig {
     @Value("${hibernate.db.dialect}")
     private String dialect;
 
+    /***
+     * Spring bean  to create the dataSource with credentials for hibernate to connect to the DB
+     * @return the configured DataSource that can connect to the DB
+     */
     @Bean
     public DataSource dataSource() {
         BasicDataSource ds = new BasicDataSource();
@@ -36,6 +44,12 @@ public class ORMConfig {
         return ds;
     }
 
+    /***
+     * Creates a sessionFactory for the provided DataSource and sets the hibernate properties including:
+     * dialect, hbm2ddl.auto, showSQL, and formatSQL
+     * @param ds the provided DataSource that can connect to the desired DB
+     * @return sfBean that is a SessionFactory for hibernate to use
+     */
     @Bean
     public LocalSessionFactoryBean sessionFactoryBean(DataSource ds) {
         LocalSessionFactoryBean sfBean = new LocalSessionFactoryBean();
@@ -45,6 +59,11 @@ public class ORMConfig {
         return sfBean;
     }
 
+    /***
+     * Allows Hibernate to manage the transactions
+     * @param sf the SessionFactory object that hibernate will manage
+     * @return the HibernateTransactionManager object that was created
+     */
     @Bean
      HibernateTransactionManager hibernateTransactionManager(SessionFactory sf) {
         HibernateTransactionManager manager = new HibernateTransactionManager();
@@ -52,6 +71,10 @@ public class ORMConfig {
         return manager;
     }
 
+    /***
+     * defines the properties that are desired and required for our Hibernate
+     * @return the properties object with all the properties desired to be included for Hibernate
+     */
     private Properties getProps() {
         Properties props = new Properties();
         props.setProperty("hibernate.dialect", dialect);

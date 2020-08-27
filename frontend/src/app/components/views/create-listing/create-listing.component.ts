@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 import { Apartment } from '../../../models/Apartment'
+import { ApartmentService } from '../../../services/apartment.service'
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-create-listing',
@@ -11,7 +13,9 @@ import { Apartment } from '../../../models/Apartment'
 export class CreateListingComponent implements OnInit {
 
   aptForm: FormGroup
-
+  
+  constructor(private apartmentService: ApartmentService, private cookieService: CookieService) { }
+  
   ngOnInit(): void {
     this.aptForm = new FormGroup({
       address: new FormControl('', [Validators.required]),
@@ -26,7 +30,20 @@ export class CreateListingComponent implements OnInit {
   }
 
   onSubmit(): void {
-    console.log('a')
+    const id = this.cookieService.get('userID')
+    const a = this.aptForm.controls.address.value
+    const beds = this.aptForm.controls.numBeds.value
+    const baths = this.aptForm.controls.numBaths.value
+    const area = this.aptForm.controls.area.value
+    const img = this.aptForm.controls.imgURL.value
+    const price = this.aptForm.controls.price.value
+    const util = this.aptForm.controls.utilDetails.value
+    const restr = this.aptForm.controls.restrictions.value
+
+    const apartment: Apartment = new Apartment(id,beds,baths,a,area,img,price,util,restr)
+    this.apartmentService.postApartment(apartment).subscribe(e => {
+      console.log(e)
+    })
   }
 
 }

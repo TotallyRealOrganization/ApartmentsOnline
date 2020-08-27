@@ -39,6 +39,7 @@ export class UserService {
   }
 
   getUser(): User {
+    console.log(this.user)
     return this.user
   }
 

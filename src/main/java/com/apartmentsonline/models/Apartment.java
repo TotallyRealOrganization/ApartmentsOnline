@@ -44,6 +44,10 @@ public class Apartment {
     @Column(name = "restrictions")
     private String restrictions;
 
+    @ManyToOne
+    @JoinColumn(name="user_id", insertable = false, updatable = false)
+    private User user;
+
     public Apartment() {
         this.id = UUID.randomUUID();
     }

@@ -9,43 +9,43 @@
             <form [formGroup]="aptForm" (ngSubmit)="onSubmit()">
                 <mat-form-field appearance="fill" class="full-width">
                     <mat-label>Address</mat-label>
-                    <input matInput placeholder="Address">
+                    <input formControlName="address" matInput placeholder="Address">
                 </mat-form-field>
                 <br>
                 <div class="row">
                     <mat-form-field appearance="fill">
                         <mat-label># Bedrooms</mat-label>
-                        <input type="number" matInput placeholder="1">
+                        <input formControlName="numBeds" type="number" matInput placeholder="1">
                     </mat-form-field>
 
                     <mat-form-field appearance="fill">
                         <mat-label># Bathrooms</mat-label>
-                        <input type="number" matInput placeholder="1">
+                        <input formControlName="numBaths" type="number" matInput placeholder="1">
                     </mat-form-field>
                     <mat-form-field appearance="fill">
                         <mat-label>Area (sq. ft.)</mat-label>
-                        <input type="number" matInput placeholder="800">
+                        <input formControlName="area" type="number" matInput placeholder="800">
                     </mat-form-field>
 
                     <mat-form-field appearance="fill">
                         <mat-label>Price (monthly)</mat-label>
-                        <input type="number" matInput placeholder="1250.00">
+                        <input formControlName="price" type="number" matInput placeholder="1250.00">
                     </mat-form-field>
                     
                     <mat-form-field appearance="fill" class="grow">
                         <mat-label>Image URL</mat-label>
-                        <input type="url" matInput>
+                        <input formControlName="imgURL" type="url" matInput>
                     </mat-form-field>
                 </div>
                 <br>
                 <div class="row">
                     <mat-form-field class="half-width" appearance="fill">
                         <mat-label>Utilities Details</mat-label>
-                        <input type="url" matInput>
+                        <input formControlName="utilDetails" matInput>
                     </mat-form-field>
                     <mat-form-field class="half-width" appearance="fill">
                         <mat-label>Restrictions </mat-label>
-                        <input type="url" matInput>
+                        <input formControlName="restrictions" matInput>
                     </mat-form-field>
                 </div>
                 <br>

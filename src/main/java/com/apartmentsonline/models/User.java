@@ -25,7 +25,6 @@ public class User {
                 ", password='" + password + '\'' +
                 ", id=" + id +
                 ", listedApartments=" + listedApartments +
-                ", savedApartments=" + savedApartments +
                 '}';
     }
 
@@ -34,11 +33,12 @@ public class User {
     @Column(name = "user_id")
     private UUID id;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "id")
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name="user_id")
     private Set<Apartment> listedApartments;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "id")
-    private Set<Apartment> savedApartments;
+//    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "id")
+//    private Set<Apartment> savedApartments;
 
     public User() {
         this.id = UUID.randomUUID();
@@ -80,11 +80,11 @@ public class User {
         this.listedApartments = listedApartments;
     }
 
-    public Set<Apartment> getSavedApartments() {
-        return savedApartments;
-    }
-
-    public void setSavedApartments(Set<Apartment> savedApartments) {
-        this.savedApartments = savedApartments;
-    }
+//    public Set<Apartment> getSavedApartments() {
+//        return savedApartments;
+//    }
+//
+//    public void setSavedApartments(Set<Apartment> savedApartments) {
+//        this.savedApartments = savedApartments;
+//    }
 }

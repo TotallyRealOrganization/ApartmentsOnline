@@ -2,7 +2,7 @@
 
     <mat-card class="card">
         <mat-card-content>
-            <h1>Welcome, {{user.fullName}}</h1>
+            <h1 *ngIf="user">Welcome, {{user.fullName}}</h1>
         </mat-card-content>
         <mat-card-actions class="button-container">
           <button class="b" color="primary" [routerLink]="createListing" mat-raised-button >Post an Apartment</button>

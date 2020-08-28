@@ -4,8 +4,8 @@ notifications:
 services:
  - docker
 before install:
- -docker build -t df_project2 .
- -docker run df_project2
+ - docker build -t df_project2 .
+ - docker run df_project2
 stages:
  - frontend
  - backend

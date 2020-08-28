@@ -29,7 +29,7 @@ jobs:
     workspaces:
      create:
       name: front
-      path: /home/travis/build/TotallyRealOrganization/ApartmentsOnline/frontend
+      path: /home/travis/build/TotallyRealOrganization/ApartmentsOnline
      
   - stage: backend
     git:

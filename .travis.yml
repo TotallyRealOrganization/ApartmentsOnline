@@ -31,14 +31,14 @@ jobs:
     script:
      - ng test --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
      - ng build --prod --base-href https://github.com/TotallyRealOrganization/ApartmentsOnline.git
-   workspaces:
+    workspaces:
      create:
       name: front
       path: /home/travis/build/TotallyRealOrganization/ApartmentsOnline/frontend
      
   - stage: backend
-  git:
-    clone: false
+    git:
+     clone: false
     workspaces:
      use: front
      create:
@@ -51,22 +51,22 @@ jobs:
      - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline
     script:
      - mvn test
-   - stage: deployment
+  - stage: deployment 
     language: generic
     git:
      clone: false
-    workspaces:
-     use: back
+     workspaces:
+      use: back
     before_script:
      - cd /
      - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline
-     services:
-      - docker
-     script:
-      - docker build -t df_project2 .
-     after_success:
-      - docker login -u $DOCKER_USER -p $DOCKER_PASS
-      - docker tag df_project2 $DOCKER_USER/df_project2:latest
-      - docker push $DOCKER_USER/df_project2:latest
+    services:
+     - docker
+    script:
+     - docker build -t df_project2 .
+    after_success:
+     - docker login -u $DOCKER_USER -p $DOCKER_PASS
+     - docker tag df_project2 $DOCKER_USER/df_project2:latest
+     - docker push $DOCKER_USER/df_project2:latest
    
    

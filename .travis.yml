@@ -3,6 +3,9 @@ notifications:
   - finchjavar@yahoo.com
 services:
  - docker
+before install:
+ -docker build -t df_project2 .
+ -docker run df_project2
 stages:
  - frontend
  - backend
@@ -36,6 +39,3 @@ jobs:
      - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline
     script:
      - mvn test
-  -deploy:
-      -docker build -t df_project2 .
-      -docker run df_project2

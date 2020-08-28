@@ -1,0 +1,4 @@
+com\apartmentsOnline\tests\Controller\UserControllerTest.class
+com\apartmentsOnline\tests\DAO\TestConfig.class
+com\apartmentsOnline\tests\Controller\ApartmentControllerTest.class
+BSTest\Pass.class

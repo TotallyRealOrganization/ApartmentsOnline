@@ -9,7 +9,7 @@ before install:
 stages:
  - frontend
  - backend
-
+ - deployment
 dist: trusty
 sudo: required
 branches:
@@ -23,7 +23,7 @@ jobs:
      - 10
     addons:
      chrome: stable
-    before_script:
+     before_script:
      - cd /
      - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline/frontend
      - npm install -g @angular/cli
@@ -31,7 +31,19 @@ jobs:
     script:
      - ng test --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
      - ng build --prod --base-href https://github.com/TotallyRealOrganization/ApartmentsOnline.git
+   workspaces:
+     create:
+      name: front
+      path: /home/travis/build/TotallyRealOrganization/ApartmentsOnline/frontend
+     
   - stage: backend
+  git:
+    clone: false
+    workspaces:
+     use: front
+     create:
+      name: back
+      path: /home/travis/build/TotallyRealOrganization/ApartmentsOnline
     language: java
     jdk: oraclejdk8
     before_script:
@@ -39,3 +51,22 @@ jobs:
      - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline
     script:
      - mvn test
+   - stage: deployment
+    language: generic
+    git:
+     clone: false
+    workspaces:
+     use: back
+    before_script:
+     - cd /
+     - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline
+     services:
+      - docker
+     script:
+      - docker build -t df_project2 .
+     after_success:
+      - docker login -u $DOCKER_USER -p $DOCKER_PASS
+      - docker tag df_project2 $DOCKER_USER/df_project2:latest
+      - docker push $DOCKER_USER/df_project2:latest
+   
+   

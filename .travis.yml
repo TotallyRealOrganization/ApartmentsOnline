@@ -32,6 +32,8 @@ jobs:
       path: /home/travis/build/TotallyRealOrganization/ApartmentsOnline
      
   - stage: backend
+    language: java
+    jdk: oraclejdk8
     git:
      clone: false
     workspaces:
@@ -39,11 +41,9 @@ jobs:
      create:
       name: back
       path: /home/travis/build/TotallyRealOrganization/ApartmentsOnline
-    language: java
-    jdk: oraclejdk8
     before_script:
-     - pwd
-     - cd /
+     - ls
+     #- cd /
      - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline
     script:
      - mvn package

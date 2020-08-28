@@ -83,15 +83,15 @@ public class UserDAO {
         return true;
     }
 
-    /***
-     * updates a persisted User
-     * @param user the user object that needs to be updated with new values
-     * @return the newly updated User object
-     */
-    @Transactional(isolation = Isolation.SERIALIZABLE)
-    public User updateUser(User user) {
-        Session session = sf.getCurrentSession();
-        session.update(user);
-        return user;
-    }
+//    /***
+//     * updates a persisted User
+//     * @param user the user object that needs to be updated with new values
+//     * @return the newly updated User object
+//     */
+//    @Transactional(isolation = Isolation.SERIALIZABLE)
+//    public User updateUser(User user) {
+//        Session session = sf.getCurrentSession();
+//        session.update(user);
+//        return user;
+//    }
 }

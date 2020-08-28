@@ -1,16 +1,19 @@
 <mat-card class="ap-card" *ngIf="apartment">
-    <mat-card-header>
-        <mat-card-title>{{apartment.address}}</mat-card-title>
-        <mat-card-subtitle>Austin, TX</mat-card-subtitle>
-    </mat-card-header>
-
-    <img mat-card-image [src]="apartment.imgURL" alt="apartment-image">
+        <div style="display: flex; align-items: center;">
+            <img class="thumbnail" mat-card-image [src]="apartment.imgURL" alt="apartment-image">
+            <div style="display: flex; flex-direction: column; flex-grow: 1;">
+                <h1>{{apartment.address}}</h1>
+                <div style="display: flex;">
+                    <mat-icon>king_bed</mat-icon>
+                    <h4 style="margin-bottom: 0px;">Beds: {{apartment.numBeds}} </h4>
+                    <span style="width: 20px"></span>
+                    <mat-icon>bathtub</mat-icon>
+                    <h4 style="margin-bottom: 0px;">Baths: {{apartment.numBaths}}</h4>
+                    <span style="width: 20px"></span>
+                    <mat-icon>square_foot</mat-icon>
+                    <h4 style="margin-bottom: 0px;">Area: {{apartment.area}}</h4>
+                </div>
+            </div>
+        </div>
     
-    <mat-card-content>
-    </mat-card-content>
-    
-    <mat-card-actions>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
-    </mat-card-actions>
 </mat-card>

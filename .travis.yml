@@ -1,7 +1,6 @@
 notifications:
  email:
   - finchjavar@yahoo.com
-  - daniel.radke@revature.net
 
 stages:
  - frontend

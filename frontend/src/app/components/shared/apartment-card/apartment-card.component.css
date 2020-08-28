@@ -1,4 +1,17 @@
 .ap-card {
+  min-width: 80vw;
   max-width: 80vw;
   height: 175px;
+}
+
+.thumbnail {
+  margin-top: 0px;
+  margin-right: 50px;
+  height: 175px;
+  width: auto;
+}
+
+.content-container {
+  display: flex;
+  
 }

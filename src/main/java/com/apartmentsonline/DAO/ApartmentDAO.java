@@ -27,9 +27,15 @@ public class ApartmentDAO {
     }
     @Transactional(isolation = Isolation.SERIALIZABLE)
     public boolean saveApartment(Apartment newApartment) {
-        Session sesh = sf.getCurrentSession();
-        sesh.save(newApartment);
-    return true;
+        try {
+            Session sesh = sf.getCurrentSession();
+            sesh.save(newApartment);
+            sesh.flush();
+            return true;
+        } catch (Exception e) {
+            System.out.println(e);
+            return false;
+        }
     }
 
     @Transactional(isolation = Isolation.READ_COMMITTED)

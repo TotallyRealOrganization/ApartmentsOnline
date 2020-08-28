@@ -82,16 +82,16 @@ public class UserController {
 
     }
 
-    /***
-     * updates an existing user's information
-     * @param user the JSON representation of the updated User
-     * @return the newly updated User if successful or a bad request if failure
-     */
-    @PutMapping(path = "/updateUser",consumes = MediaType.APPLICATION_JSON_VALUE)
-    @ResponseBody
-    public ResponseEntity<User> updateUser(@RequestBody User user) {
-        User user1 = userService.updateUser(user);
-        return new ResponseEntity<>(user1,HttpStatus.OK);
-    }
+//    /***
+//     * updates an existing user's information
+//     * @param user the JSON representation of the updated User
+//     * @return the newly updated User if successful or a bad request if failure
+//     */
+//    @PutMapping(path = "/updateUser",consumes = MediaType.APPLICATION_JSON_VALUE)
+//    @ResponseBody
+//    public ResponseEntity<User> updateUser(@RequestBody User user) {
+//        User user1 = userService.updateUser(user);
+//        return new ResponseEntity<>(user1,HttpStatus.OK);
+//    }
 
 }

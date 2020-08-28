@@ -50,7 +50,7 @@ jobs:
      - cd /
      - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline
     script:
-     - mvn test
+     - mvn package
   - stage: deployment 
     language: generic
     git:

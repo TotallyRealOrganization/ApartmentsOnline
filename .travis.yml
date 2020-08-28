@@ -19,7 +19,6 @@ jobs:
     addons:
      chrome: stable
     before_script:
-     - pwd
      - cd /
      - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline/frontend
      - npm install -g @angular/cli
@@ -43,6 +42,7 @@ jobs:
     language: java
     jdk: oraclejdk8
     before_script:
+     - pwd
      - cd /
      - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline
     script:

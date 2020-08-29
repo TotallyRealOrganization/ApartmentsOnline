@@ -44,7 +44,7 @@ jobs:
     before_script:
      #- cd /
      - cd /home/travis/build
-     -ls
+     - ls
     script:
      - mvn package
   - stage: deployment 

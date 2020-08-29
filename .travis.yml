@@ -42,6 +42,7 @@ jobs:
       name: back
       path: /home/travis/build/TotallyRealOrganization/ApartmentsOnline
     before_script:
+     - cd /
     script:
      - mvn package
   - stage: deployment 

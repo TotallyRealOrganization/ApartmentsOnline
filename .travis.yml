@@ -51,8 +51,8 @@ jobs:
     language: generic
     git:
      clone: false
-     workspaces:
-      use: back
+    workspaces:
+     use: back
     before_script:
      - cd /
      - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline/target

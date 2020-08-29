@@ -44,6 +44,7 @@ jobs:
     before_script:
      - pwd
      - cd TotallyRealOrganization
+     - ls
     script:
      - mvn package
   - stage: deployment 

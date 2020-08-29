@@ -35,15 +35,15 @@ jobs:
     language: java
     jdk: oraclejdk8
     git:
-     clone: false
+     clone: true
     workspaces:
      use: front
      create:
       name: back
       path: /home/travis/build/TotallyRealOrganization/ApartmentsOnline
     before_script:
-     - cd /
      - ls
+     - 
     script:
      - mvn package
   - stage: deployment 

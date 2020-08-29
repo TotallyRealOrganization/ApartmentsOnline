@@ -45,7 +45,7 @@ public class ApartmentControllerTest {
 
     @Test
     public void getById() throws Exception {
-        MvcResult result = mockMvc.perform(get("/apartment/e6b94742-0bb7-42ad-9a16-853a4d661e74"))
+        MvcResult result = mockMvc.perform(get("/apartment/cd84627d-0c73-485e-a28b-c1e4cd7a8f95"))
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andReturn();

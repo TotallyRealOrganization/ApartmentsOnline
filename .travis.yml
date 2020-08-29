@@ -35,7 +35,7 @@ jobs:
     language: java
     jdk: oraclejdk8
     git:
-     clone: true
+     clone: false
     workspaces:
      use: front
      create:
@@ -49,12 +49,12 @@ jobs:
   - stage: deployment 
     language: generic
     git:
-     clone: true
+     clone: false
      workspaces:
       use: back
     before_script:
      - cd /
-     - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline
+     - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline/target
      - ls
     services:
      - docker

@@ -49,7 +49,7 @@ jobs:
   - stage: deployment 
     language: generic
     git:
-     clone: false
+     clone: true
      workspaces:
       use: back
     before_script:

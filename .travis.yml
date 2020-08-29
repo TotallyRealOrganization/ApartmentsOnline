@@ -43,7 +43,7 @@ jobs:
       path: /home/travis/build/TotallyRealOrganization/ApartmentsOnline
     before_script:
      #- cd /
-     - cd /home/travis/build
+     - cd /home/travis
      - ls
     script:
      - mvn package

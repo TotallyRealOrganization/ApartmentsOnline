@@ -29,7 +29,7 @@ jobs:
     workspaces:
      create:
       name: front
-      paths: /home/travis/build/TotallyRealOrganization/ApartmentsOnline
+      paths: /home/travis/build/TotallyRealOrganization/ApartmentsOnline/Project2
      
   - stage: backend
     language: java
@@ -40,15 +40,14 @@ jobs:
      use: front
      create:
       name: back
-      paths: /home/travis/build/TotallyRealOrganization/ApartmentsOnline
+      paths: /home/travis/build/TotallyRealOrganization/ApartmentsOnline/Project2
     before_script:
      - pwd
-     - cd TotallyRealOrganization/ApartmentsOnline
+     - cd TotallyRealOrganization/ApartmentsOnline/Project2
      - ls
     script:
      - mvn package
      - ls
-     - ls ./target
   - stage: deployment 
     language: generic
     git:

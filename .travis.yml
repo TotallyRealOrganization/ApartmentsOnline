@@ -47,6 +47,8 @@ jobs:
      - ls
     script:
      - mvn package
+     - ls
+     - ls ./target
   - stage: deployment 
     language: generic
     git:
@@ -61,9 +63,21 @@ jobs:
      - docker
     script:
      - docker build -t df_project2 .
+     - ls ./target
     after_success:
      - docker login -u $DOCKER_USER -p $DOCKER_PASS
      - docker tag df_project2 $DOCKER_USER/df_project2:latest
      - docker push $DOCKER_USER/df_project2:latest
+     
+    deploy:
+     provider: elasticbeanstalk
+     access_key_id: 
+      secure: $ACCESS_ID
+     secret_access_key: 
+      secure: $SECRET_ID
+     region: "us-east-2"
+     app: "Apartments Online"
+     env: "ApartmentsOnline-env"
+     bucket_name:  "elasticbeanstalk-us-east-2-077602278346"
    
    

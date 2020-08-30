@@ -1,4 +1,4 @@
 # Created by .ignore support plugin (hsz.mobi)
 /frontend/node_modules/
 target
-/src/main/resources/
+#/src/main/resources/

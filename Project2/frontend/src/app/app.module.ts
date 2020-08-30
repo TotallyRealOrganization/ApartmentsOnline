@@ -46,9 +46,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
 import {MatTableModule} from '@angular/material/table';
 
-import { ApartmentDetailsComponent } from './components/views/apartment-details/apartment-details.component';
-import { RestrictionsComponent } from './components/apartments/restrictions/restrictions.component';
-import { ApartmentCardComponent } from './components/shared/apartment-card/apartment-card.component';
+import { ApartmentCardComponent, DetailsDialog } from './components/shared/apartment-card/apartment-card.component';
 import { LoginComponent } from './components/views/login/login.component';
 import { SavedApartmentsComponent } from './components/views/saved-apartments/saved-apartments.component';
 import { PostedApartmentsComponent } from './components/views/posted-apartments/posted-apartments.component';
@@ -102,8 +100,6 @@ const AllMaterialModules=[
   declarations: [
     AppComponent,
     HeaderComponent,
-    ApartmentDetailsComponent,
-    RestrictionsComponent,
     ApartmentCardComponent,
     LoginComponent,
     SavedApartmentsComponent,
@@ -113,6 +109,7 @@ const AllMaterialModules=[
     HomeComponent,
     AllListingsComponent,
     RegisterComponent,
+    DetailsDialog,
   ],
   imports: [
     BrowserModule,

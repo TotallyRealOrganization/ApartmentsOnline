@@ -1,0 +1,41 @@
+<div style="width: 75vw;">
+    <h1 mat-dialog-title>Apartment Details</h1>
+    <div mat-dialog-content>
+        <mat-card class="ap-card">
+            <div style="display: flex; align-items: center;">
+                <img style="height: 30vh; width: auto; margin-right: 5vw;" mat-card-image [src]="data.imgURL" alt="image">
+                <div style="display: flex; flex-direction: column; flex-grow: 1; ">
+                    <h1>{{data.address}}</h1>
+                    <div style="display: flex;">
+                        <mat-icon>local_atm</mat-icon>
+                        <h4 style="margin-bottom: 0px;">Rent: {{data.price | currency: 'USD'}} </h4>
+                        
+                        <span style="width: 10px;"></span>
+                        <mat-icon>square_foot</mat-icon>
+                        <h4 style="margin-bottom: 0px;">Area: {{data.area}} sq. ft.</h4>
+                    </div>
+                    <div style="display: flex;">
+                        <mat-icon>king_bed</mat-icon>
+                        <h4 style="margin-bottom: 0px;">Beds: {{data.numBeds}} </h4>
+                        <span style="width: 20px;"></span>
+                        <mat-icon>bathtub</mat-icon>
+                        <h4 style="margin-bottom: 0px;">Beds: {{data.numBaths}} </h4>
+                    </div>
+                    <div style="display: flex;">
+                        <mat-icon>settings</mat-icon>
+                        <h4>Utilities:</h4>
+                        <span style="width: 10px;"></span>
+                        <h4>{{data.utilDetails}}</h4>
+                    </div>
+                    <div style="display: flex">
+                        <mat-icon>not_interested</mat-icon>
+                        <h4>Restrictions:</h4>
+                        <span style="width: 10px;"></span>
+                        <h4>{{data.restrictions}}</h4>
+                    </div>
+                </div>
+            </div>
+        
+        </mat-card>
+    </div>
+</div>

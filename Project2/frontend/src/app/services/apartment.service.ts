@@ -24,4 +24,9 @@ export class ApartmentService {
     })
     return apt
   }
+
+  getAllApartments(): Observable<Apartment[]> {
+    let apts: Observable<Apartment[]> = this.http.get<Apartment[]>(`${apiUrl}/apartment/`)
+    return apts
+  }
 }

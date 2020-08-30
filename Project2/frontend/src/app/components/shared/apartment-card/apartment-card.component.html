@@ -8,7 +8,7 @@
                     <h4 style="margin-bottom: 0px;">Rent: {{apartment.price | currency: 'USD'}} </h4>
                 </div>
             </div>
-            <button mat-raised-button color="primary">View Details</button>
+            <button (click)="openDetails()" mat-raised-button color="primary">View Details</button>
         </div>
     
 </mat-card>

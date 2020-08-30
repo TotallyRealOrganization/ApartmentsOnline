@@ -1,9 +1,13 @@
 package com.apartmentsonline.models;
 
+
 import org.hibernate.annotations.Type;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import javax.persistence.*;
 import java.util.UUID;
+
+@EnableSwagger2
 @Entity
 @Table(name = "apartment")
 /***

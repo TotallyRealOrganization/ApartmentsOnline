@@ -8,11 +8,12 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
-
+@EnableSwagger2
 @CrossOrigin
 @Controller
 @RequestMapping(path = "/apartment")

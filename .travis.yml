@@ -66,6 +66,10 @@ jobs:
      - docker login -u $DOCKER_USER -p $DOCKER_PASS
      - docker tag df_project2 $DOCKER_USER/df_project2:latest
      - docker push $DOCKER_USER/df_project2:latest
+    before_deploy:
+     - ls
+     - cd /
+     - cd /home/travis/build/TotallyRealOrganization
      
     deploy:
      provider: elasticbeanstalk
@@ -77,5 +81,6 @@ jobs:
      bucket_name: "elasticbeanstalk-us-east-2-077602278346"
      on:
       branch: master
+     edge: true
    
    

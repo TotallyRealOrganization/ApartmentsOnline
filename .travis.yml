@@ -40,7 +40,7 @@ jobs:
      use: front
      create:
       name: back
-      paths: /home/travis/build/TotallyRealOrganization/ApartmentsOnline/Project2
+      paths: /home/travis/build/TotallyRealOrganization/ApartmentsOnline
     before_script:
      - pwd
      - cd TotallyRealOrganization/ApartmentsOnline/Project2
@@ -56,13 +56,12 @@ jobs:
      use: back
     before_script:
      - cd /
-     - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline/Project2
+     - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline
      - ls
     services:
      - docker
     script:
-     - docker build -t df_project2 .
-     - ls ./target
+     - docker build -t df_project2 ./Project2
     after_success:
      - docker login -u $DOCKER_USER -p $DOCKER_PASS
      - docker tag df_project2 $DOCKER_USER/df_project2:latest

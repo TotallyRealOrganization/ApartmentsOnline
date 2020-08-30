@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ApartmentCardComponent } from './apartment-card.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 describe('ApartmentCardComponent', () => {
   let component: ApartmentCardComponent;
@@ -8,7 +9,8 @@ describe('ApartmentCardComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ApartmentCardComponent ]
+      declarations: [ ApartmentCardComponent ],
+      imports: [MatDialogModule]
     })
     .compileComponents();
   }));

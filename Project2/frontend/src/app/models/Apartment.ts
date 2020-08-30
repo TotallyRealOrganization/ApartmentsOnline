@@ -1,7 +1,6 @@
 import { User } from "./User";
 
 export class Apartment {
-    id: string;
     numBeds: number;
     numBaths: number;
     address: string;

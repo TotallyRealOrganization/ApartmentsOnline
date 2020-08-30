@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">53.85% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>14/26</span>
+                <span class='fraction'>26/26</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>4/8</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>12/24</span>
+                <span class='fraction'>24/24</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -129,33 +129,18 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">15x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -166,6 +151,21 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -189,24 +189,24 @@ export class UserService {
 &nbsp;
   constructor(private http: HttpClient, private cookieService: CookieService) { }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  login(</span>u: User): Observable&lt;User&gt; {
-    let usr = <span class="cstat-no" title="statement not covered" >this.http.post&lt;User&gt;(`${apiUrl}/user/login`, u).pipe(share())</span>
-<span class="cstat-no" title="statement not covered" >    usr.subscribe(<span class="fstat-no" title="function not covered" >e </span>=&gt; {</span>
-<span class="cstat-no" title="statement not covered" >      this.user = e</span>
-<span class="cstat-no" title="statement not covered" >      this.cookieService.set('userID', e.id)</span>
-<span class="cstat-no" title="statement not covered" >      this.loggedIn.next(true)</span>
+  login(u: User): Observable&lt;User&gt; {
+    let usr = this.http.post&lt;User&gt;(`${apiUrl}/user/login`, u).pipe(share())
+    usr.subscribe(e =&gt; {
+      this.user = e
+      this.cookieService.set('userID', e.id)
+      this.loggedIn.next(true)
     })
-<span class="cstat-no" title="statement not covered" >    return usr</span>
+    return usr
   }
   
-<span class="fstat-no" title="function not covered" >  register(</span>u: User ): Observable&lt;User&gt; {
-    let usr = <span class="cstat-no" title="statement not covered" >this.http.post&lt;User&gt;(`${apiUrl}/user/register`, u).pipe(share())</span>
-<span class="cstat-no" title="statement not covered" >    usr.subscribe(<span class="fstat-no" title="function not covered" >e </span>=&gt; {</span>
-<span class="cstat-no" title="statement not covered" >      this.user = e</span>
-<span class="cstat-no" title="statement not covered" >      this.cookieService.set('userID', e.id)</span>
-<span class="cstat-no" title="statement not covered" >      this.loggedIn.next(true)</span>
+  register(u: User ): Observable&lt;User&gt; {
+    let usr = this.http.post&lt;User&gt;(`${apiUrl}/user/register`, u).pipe(share())
+    usr.subscribe(e =&gt; {
+      this.user = e
+      this.cookieService.set('userID', e.id)
+      this.loggedIn.next(true)
     })
-<span class="cstat-no" title="statement not covered" >    return usr</span>
+    return usr
   }
 &nbsp;
   getUser(): User {
@@ -232,7 +232,7 @@ export class UserService {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sun Aug 30 2020 10:15:24 GMT-0500 (Central Daylight Time)
+                at Sun Aug 30 2020 18:40:51 GMT-0500 (Central Daylight Time)
             </div>
         </div>
         <script src="../../../prettify.js"></script>

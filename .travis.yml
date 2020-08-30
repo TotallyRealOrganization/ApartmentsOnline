@@ -47,6 +47,8 @@ jobs:
      - ls
     script:
      - mvn package
+     - ls
+     - ls ./target
   - stage: deployment 
     language: generic
     git:

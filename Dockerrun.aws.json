@@ -1,8 +1,7 @@
 {
-  "AWSEBDockerRunVersion": "1",
-
+  "AWSEBDockerrunVersion": "1",
   "Image": {
-    "Name": "javarfinch/df_project2"
+    "Name": "javarfinch/df_project2:latest"
   },
   "Ports": [
     {

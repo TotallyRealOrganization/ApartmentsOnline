@@ -67,7 +67,9 @@ jobs:
      - docker login -u $DOCKER_USER -p $DOCKER_PASS
      - docker tag df_project2 $DOCKER_USER/df_project2:latest
      - docker push $DOCKER_USER/df_project2:latest
-     - cd ..
+     - cd /
+     - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline
+     - ls
      
     deploy:
      provider: elasticbeanstalk

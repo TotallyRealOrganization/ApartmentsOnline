@@ -1,0 +1,13 @@
+{
+  "AWSEBDockerRunVersion": "1",
+
+  "Image": {
+    "Name": "javarfinch/df_project2"
+  },
+  "Ports": [
+    {
+      "ContainerPort": 8080,
+      "HostPort": 8000
+    }
+  ]
+}

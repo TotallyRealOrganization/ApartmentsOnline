@@ -20,7 +20,7 @@ jobs:
      chrome: stable
     before_script:
      - cd /
-     - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline/Project2
+     - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline/Project2/frontend
      - npm install -g @angular/cli
      - npm install
     script:

@@ -66,19 +66,14 @@ jobs:
      - docker login -u $DOCKER_USER -p $DOCKER_PASS
      - docker tag df_project2 $DOCKER_USER/df_project2:latest
      - docker push $DOCKER_USER/df_project2:latest
-     - cd /
-     - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline
-     - ls
      
     deploy:
      provider: elasticbeanstalk
-     access_key_id: 
-      secure: $ACCESS_ID
-     secret_access_key: 
-      secure: $SECRET_ID
+     access_key_id: $ACCESS_ID
+     secret_access_key: $SECRET_ID
      region: "us-east-2"
      app: "Apartments Online"
      env: "ApartmentsOnline-env"
-     bucket_name:  "elasticbeanstalk-us-east-2-077602278346"
+     bucket_name: "elasticbeanstalk-us-east-2-077602278346"
    
    

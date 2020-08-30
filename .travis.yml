@@ -63,6 +63,7 @@ jobs:
      - docker
     script:
      - docker build -t df_project2 .
+     - ls ./target
     after_success:
      - docker login -u $DOCKER_USER -p $DOCKER_PASS
      - docker tag df_project2 $DOCKER_USER/df_project2:latest

@@ -72,9 +72,9 @@ jobs:
     deploy:
      provider: elasticbeanstalk
      access_key_id: 
-      secure: "Encrypted <access-key-id>="
-     secret_access_key:
-      secure: "Encypted <secret-access-key>="
+      secure: $ACCESS_ID
+     secret_access_key: 
+      secure: $SECRET_ID
      region: "us-east-2"
      app: "Apartments Online"
      env: "ApartmentsOnline-env"

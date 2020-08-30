@@ -4,17 +4,21 @@
             <div style="display: flex; flex-direction: column; flex-grow: 1;">
                 <h1>{{apartment.address}}</h1>
                 <div style="display: flex;">
-                    <mat-icon>king_bed</mat-icon>
-                    <h4 style="margin-bottom: 0px;">Beds: {{apartment.numBeds}} </h4>
-                    <span style="width: 20px"></span>
-                    <mat-icon>bathtub</mat-icon>
-                    <h4 style="margin-bottom: 0px;">Baths: {{apartment.numBaths}}</h4>
-                    <span style="width: 20px"></span>
-                    <mat-icon>square_foot</mat-icon>
-                    <h4 style="margin-bottom: 0px;">Area: {{apartment.area}}</h4>
+                    <mat-icon>local_atm</mat-icon>
+                    <h4 style="margin-bottom: 0px;">Rent: {{apartment.price | currency: 'USD'}} </h4>
                 </div>
             </div>
             <button mat-raised-button color="primary">View Details</button>
         </div>
     
 </mat-card>
+
+<!-- 
+<mat-icon>king_bed</mat-icon>
+<h4 style="margin-bottom: 0px;">Beds: {{apartment.numBeds}} </h4>
+<span style="width: 20px"></span>
+<mat-icon>bathtub</mat-icon>
+<h4 style="margin-bottom: 0px;">Baths: {{apartment.numBaths}}</h4>
+<span style="width: 20px"></span>
+<mat-icon>square_foot</mat-icon>
+<h4 style="margin-bottom: 0px;">Area: {{apartment.area}}</h4> -->

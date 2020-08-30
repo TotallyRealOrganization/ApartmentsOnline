@@ -75,5 +75,7 @@ jobs:
      app: "Apartments Online"
      env: "ApartmentsOnline-env"
      bucket_name: "elasticbeanstalk-us-east-2-077602278346"
+      on:
+       branch: master
    
    

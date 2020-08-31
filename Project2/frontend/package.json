@@ -8,7 +8,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "api": "json-server api/db.json --routes api/routes.json --no-cors=true"
+    "api": "json-server api/db.json --routes api/routes.json --no-cors=true",
+    "compodoc": "npx compodoc -p tsconfig.base.json --theme readthedocs -s"
+
   },
   "private": true,
   "dependencies": {
@@ -22,6 +24,7 @@
     "@angular/platform-browser": "~10.0.9",
     "@angular/platform-browser-dynamic": "~10.0.9",
     "@angular/router": "~10.0.9",
+    "@compodoc/compodoc": "^1.1.11",
     "ngx-cookie-service": "^10.0.1",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",

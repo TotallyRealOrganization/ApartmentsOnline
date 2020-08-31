@@ -8,7 +8,7 @@ import { AllListingsComponent } from './components/views/all-listings/all-listin
 import { HomeComponent } from './components/views/home/home.component';
 import { RegisterComponent } from './components/views/register/register.component';
 
-const routes: Routes = [
+const APP_ROUTES: Routes = [
   { path: 'create-listing', component: CreateListingComponent},
   { path: 'login', component: LoginComponent},
   { path: 'register', component: RegisterComponent},
@@ -19,7 +19,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(APP_ROUTES)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

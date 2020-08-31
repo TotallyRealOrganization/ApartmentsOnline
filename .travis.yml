@@ -29,7 +29,7 @@ jobs:
     workspaces:
      create:
       name: front
-      paths: /home/travis/build/TotallyRealOrganization/ApartmentsOnline/Project2
+      paths: /home/travis/build/TotallyRealOrganization/ApartmentsOnline
      
   - stage: backend
     language: java

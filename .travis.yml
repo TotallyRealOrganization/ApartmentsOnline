@@ -69,9 +69,8 @@ jobs:
     before_deploy:
      - ls
      - cd /
-     - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline/DockerStuff
+     - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline
      - ls 
-     
     deploy:
      provider: elasticbeanstalk
      access_key_id: $ACCESS_ID

@@ -29,7 +29,7 @@ jobs:
     workspaces:
      create:
       name: front
-      paths: /home/travis/build/TotallyRealOrganization/ApartmentsOnline/Project2
+      paths: /home/travis/build/TotallyRealOrganization/ApartmentsOnline
      
   - stage: backend
     language: java
@@ -48,6 +48,9 @@ jobs:
     script:
      - mvn package
      - ls
+     - cd /
+     - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline
+     - ls -a
   - stage: deployment 
     language: generic
     git:
@@ -57,7 +60,7 @@ jobs:
     before_script:
      - cd /
      - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline
-     - ls
+     - ls -a
     services:
      - docker
     script:
@@ -69,9 +72,8 @@ jobs:
     before_deploy:
      - ls
      - cd /
-     - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline/Project2
+     - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline
      - ls -a
-     
     deploy:
      provider: elasticbeanstalk
      access_key_id: $ACCESS_ID

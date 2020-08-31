@@ -70,6 +70,7 @@ jobs:
      - ls
      - cd /
      - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline
+     - ls
      
     deploy:
      provider: elasticbeanstalk

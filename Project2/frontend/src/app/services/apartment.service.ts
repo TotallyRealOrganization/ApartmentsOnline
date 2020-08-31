@@ -17,16 +17,13 @@ export class ApartmentService {
 
   postApartment(a: Apartment): Observable<Apartment> {
     let apt = this.http.post<Apartment>(`${apiUrl}/apartment`, a).pipe(share())
-    apt.subscribe(e => {
-      this.userService.fetchUser(this.cookieService.get('userID')).subscribe(u => {
-        console.log(u)
-      })
-    })
+    apt.subscribe()
     return apt
   }
 
   getAllApartments(): Observable<Apartment[]> {
-    let apts: Observable<Apartment[]> = this.http.get<Apartment[]>(`${apiUrl}/apartment/`)
+    let apts: Observable<Apartment[]> = this.http.get<Apartment[]>(`${apiUrl}/apartment/`).pipe(share())
+    apts.subscribe()
     return apts
   }
 }

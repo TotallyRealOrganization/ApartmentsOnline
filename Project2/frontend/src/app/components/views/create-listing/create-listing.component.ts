@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { Apartment } from '../../../models/Apartment'
 import { ApartmentService } from '../../../services/apartment.service'
 import { CookieService } from 'ngx-cookie-service';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-create-listing',
@@ -14,7 +15,7 @@ export class CreateListingComponent implements OnInit {
 
   aptForm: FormGroup
   
-  constructor(private apartmentService: ApartmentService, private router: Router, private cookieService: CookieService) { }
+  constructor(private apartmentService: ApartmentService, private router: Router, private cookieService: CookieService, private userService: UserService) { }
   
   ngOnInit(): void {
     this.aptForm = new FormGroup({
@@ -42,6 +43,9 @@ export class CreateListingComponent implements OnInit {
 
     const apartment: Apartment = new Apartment(id,beds,baths,a,area,img,price,util,restr)
     this.apartmentService.postApartment(apartment).subscribe(e => {
+      this.userService.fetchUser(this.cookieService.get('userID')).subscribe(u => {
+        console.log(u)
+      })
       this.router.navigate(['/home'])
     })
   }

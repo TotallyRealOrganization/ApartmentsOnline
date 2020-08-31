@@ -14,7 +14,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 import java.awt.*;
 
 @EnableSwagger2
-@CrossOrigin
+@CrossOrigin("*")
 @Controller
 @RequestMapping(path = "/user")
 /***

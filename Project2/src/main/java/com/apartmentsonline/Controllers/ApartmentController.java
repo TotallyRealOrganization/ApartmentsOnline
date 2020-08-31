@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 @EnableSwagger2
-@CrossOrigin
+@CrossOrigin("*")
 @Controller
 @RequestMapping(path = "/apartment")
 public class ApartmentController {

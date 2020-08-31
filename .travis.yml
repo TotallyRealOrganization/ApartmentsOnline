@@ -69,7 +69,8 @@ jobs:
     before_deploy:
      - ls
      - cd /
-     - cd /home/travis/build/TotallyRealOrganization
+     - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline/Project2
+     - ls -a
      
     deploy:
      provider: elasticbeanstalk

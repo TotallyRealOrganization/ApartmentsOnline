@@ -23,6 +23,9 @@ jobs:
      - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline/Project2/frontend
      - npm install -g @angular/cli
      - npm install
+     - cd /
+     - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline
+     - ls -a
     script:
      #- ng test --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
      - ng build --prod
@@ -48,6 +51,9 @@ jobs:
     script:
      - mvn package
      - ls
+     - cd /
+     - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline
+     - ls -a
   - stage: deployment 
     language: generic
     git:
@@ -57,7 +63,7 @@ jobs:
     before_script:
      - cd /
      - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline
-     - ls
+     - ls -a
     services:
      - docker
     script:
@@ -70,7 +76,7 @@ jobs:
      - ls
      - cd /
      - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline
-     - ls 
+     - ls -a
     deploy:
      provider: elasticbeanstalk
      access_key_id: $ACCESS_ID

@@ -69,7 +69,7 @@ jobs:
     before_deploy:
      - ls
      - cd /
-     - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline/Project2
+     - cd /home/travis/build/TotallyRealOrganization/ApartmentsOnline/
      - ls -a
      
     deploy:
